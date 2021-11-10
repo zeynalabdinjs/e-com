@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orgomart - Grocery Store HTML Template</title>
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body class="color-theme-green mont-font">
+
+    <div class="preloader"></div>
+    <!-- main wrapper  -->
+    <div class="main-wrapper">
+
+        
+        <!-- HEADER WRAPPER -->
+        <div class="header-menu-mob pt-2 pb-2 shadow-xss position-fixed w-100 z-index-10 bg-white d-none d-block-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-start"><button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#menumodal"><span class="navbar-toggler-icon"></span></button></div>
+                    <div class="col text-center"><a href="index.html"><img src="images/logo.png" alt="logo" class="logo w-90 "></a></div>
+                    <div class="col text-end"><a href="#" class="nav-icon mt-1 d-inline-block" data-bs-toggle="modal" data-bs-target="#cartmodal"><i class="feather-shopping-bag text-grey-500 font-xl"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="upper-header bg-lightgrey pt-2 pb-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="nav">
+                            <li class="nav-item"><a class=" ps-0" href="about.html">About Us</a></li>
+                            <li class="nav-item"><a href="dashboard.html">My account</a></li>
+                            <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#savedmodal">Wishlist</a></li>
+                            <li class="nav-item"><a href="#">Order Tracking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <ul class="navbar-nav float-end">
+                            <li class="nav-item  nav-item-toggle active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">English </a>
+                                <ul class="dropdown-menu border-0 shadow-xss">
+                                  <li><a class="dropdown-item" href="grocery-1.html"> English</a></li>
+                                  <li><a class="dropdown-item" href="grocery-2.html"> Spanish </a></li>
+                                  <li><a class="dropdown-item" href="grocery-3.html"> Urdu </a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item nav-item-toggle  active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                <ul class="dropdown-menu border-0 shadow-xss">
+                                  <li><a class="dropdown-item" href="shop-list-1.html"> USD</a></li>
+                                  <li><a class="dropdown-item" href="shop-list-2.html"> AUD </a></li>
+                                  <li><a class="dropdown-item" href="shop-list-3.html"> REA </a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wrapper pt-4 pb-1 z-index-5 ovh bg-white d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex">
+                        <!-- <a href="#" class="nav-icon ps-0 ms-0 ms-n1" data-bs-toggle="modal" data-bs-target="#categorymodal"><i class="feather-menu font-lg text-grey-500"></i></a> -->
+                        <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+                        <div class="header-search ms-auto me-2 d-flex">
+                            <a href="#" class="location me-3" data-bs-toggle="modal" data-bs-target="#locationmodal">
+                                <span class="fw-600 font-xssss text-grey-400">Delivery to</span>
+                                <i class="feather-map-pin text-grey-500"></i>
+                                <h4 class="fw-600 font-xssss mt-0 text-current mb-0 ls-0">Downtown New York..</h4>
+                            </a>
+                            <div class="form-group mb-0 icon-input d-none d-xl-block me-2">
+                                <i class="feather-search font-sm text-grey-400"></i>
+                                <input type="text" placeholder="Start typing to search.." class="lh-38 pt-2 pb-2 ps-5 pe-3 font-xssss fw-500 rounded-xl posr">
+                            </div>
+                            <a href="#" class="nav-icon"><span class="dot-count bg-warning"></span><i class="feather-bell text-grey-500"></i></a>
+                            <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#savedmodal"><i class="feather-heart text-grey-500"></i></a>
+                            <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#cartmodal"><i class="feather-shopping-bag text-grey-500"></i></a>
+                            <a href="dashboard.html" class="nav-icon p-0"><img src="https://via.placeholder.com/50x50.png" alt="user" class="w-40 mt-1"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="lower-header pt-3 pb-0 shadow-xss z-index-1 bg-white d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="dropdown dropdown-right border-0">
+                            <button class="btn border-0 rounded-0 dropdown-toggle" type="button" data-bs-toggle="modal" data-bs-target="#categorymodal"><i class="feather-align-left"></i> All Categories</button>
+                            <ul class="dropdown-menu w-100 border-0 mt-3 shadow-xss">
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Biscuits &amp; Snacks  <span class="alert-warning text-warning">NEW</span></a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Breads &amp; Bakery </a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Breakfast &amp; Dairy <span class="alert-success text-success">Offer</span></a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Frozen Foods </a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Fruits &amp; Vegetables </a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Grocery &amp; Staples </a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Household Needs </a></li>
+                                <li><a class="dropdown-item dropdown-toggle" href="#">Meats &amp; Seafood </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="navbar navbar-expand-lg p-0">
+                            <div class="navbar-collapse collapse show" id="main_nav" style="">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item nav-item-toggle active dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Home </a>
+                                        <ul class="dropdown-menu border-0 shadow-xss">
+                                          <li><a class="dropdown-item" href="g-1.html"> Grocery One</a></li>
+                                          <li><a class="dropdown-item" href="g-2.html"> Grocery Two </a></li>
+                                          <li><a class="dropdown-item" href="g-3.html"> Grocery Three </a></li>
+                                          <li><a class="dropdown-item" href="g-4.html"> Grocery Four</a></li>
+                                          <li><a class="dropdown-item" href="g-5.html"> Grocery Five</a></li>
+                                          <li><a class="dropdown-item" href="g-6.html"> Grocery Six </a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-toggle active dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Shop <span class="bg-danger">New</span></a>
+                                        <ul class="dropdown-menu border-0 shadow-xss">
+                                          <li><a class="dropdown-item" href="shop-list-1.html"> Shop One</a></li>
+                                          <li><a class="dropdown-item" href="shop-list-2.html"> Shop Two </a></li>
+                                          <li><a class="dropdown-item" href="shop-list-3.html"> Shop Three </a></li>
+                                          <li><a class="dropdown-item" href="shop-list-4.html"> Shop Four</a></li>
+                                          <li><a class="dropdown-item" href="shop-list-5.html"> Shop Five </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item nav-item-toggle active dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                                        <ul class="dropdown-menu border-0 shadow-xss">
+                                          <li><a class="dropdown-item" href="dashboard.html"> Dashboard</a></li>
+                                          <li><a class="dropdown-item" href="address.html"> Saved Address </a></li>
+                                          <li><a class="dropdown-item" href="orders.html"> Orders </a></li>
+                                          <li><a class="dropdown-item" href="coupon.html"> Coupon</a></li>
+                                          <li><a class="dropdown-item" href="payment.html"> Payment </a></li>
+                                          <li><a class="dropdown-item" href="notification.html"> Notification </a></li>
+                                          <li><a class="dropdown-item" href="default.html"> Logout </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item nav-item-toggle active dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                                        <ul class="dropdown-menu border-0 shadow-xss">
+                                          <li><a class="dropdown-item" href="single-product-1.html"> Single One</a></li>
+                                          <li><a class="dropdown-item" href="single-product-2.html"> Single Two </a></li>
+                                          <li><a class="dropdown-item" href="single-product-3.html"> Single Three </a></li>
+                                          <li><a class="dropdown-item" href="single-product-4.html"> Single Four</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item active dropdown nav-item-toggle">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                        <ul class="dropdown-menu border-0 shadow-xss">
+                                          <li><a class="dropdown-item" href="about.html"> About</a></li>
+                                          <li><a class="dropdown-item" href="contact.html"> Contact </a></li>
+                                          <li><a class="dropdown-item" href="blog.html"> Blog </a></li>
+                                          <li><a class="dropdown-item" href="blog-single.html"> Single Blog</a></li>
+                                          <li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item text-grey-500 fw-500 font-xssss">Need help? Call Us : <a href="tel:03340005000" class="fw-700 text-current" >+ 033 4000 5000</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- HEADER WRAPPER -->
+
+        <div class="das-nav md-mt-6 p-0 bg-current-shade bg-image-bottomcenter bg-image-cover" style="background-image: url(https://via.placeholder.com/1900x250.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 ps-4 offset-lg-4 d-flex align-items-start flex-column h-250">
+                        <h1 class="mt-lg-auto mb-4 mt-5 display3-size display1-sm-size text-grey-900 fw-700">Payment</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-div pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card rounded-10 shadow-xss p-4 border-0 mt-n10">
+                            <div class="card-body text-center">
+                                <figure class="avatar ms-auto me-auto mb-0 mt-0 w100"><img src="https://via.placeholder.com/100x100.jpg" alt="image" class="shadow-sm rounded-circle w-125"></figure>
+                                <h4 class="fw-700 text-grey-900 white-text font-sm mb-0 mt-3">Hurin Seary</h4>
+                                <span class="fw-600 font-xssss text-grey-500 mt-0 d-block">@ swrryhurry</span>
+                            </div>
+                            <div class="card-body p-0 mt-4">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item d-block me-0"><a href="dashboard.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-primary-gradiant text-white feather-home font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Dashboard</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li>
+                                    <li class="list-inline-item d-block me-0"><a href="address.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-gold-gradiant text-white feather-map-pin font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Saved Address</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li>
+                                    <li class="list-inline-item d-block me-0"><a href="orders.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-mini-gradiant text-white feather-hard-drive font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Orders</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li><li class="list-inline-item d-block me-0"><a href="coupon.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-skype text-white feather-award font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Coupon</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li>
+                                    <li class="list-inline-item d-block me-0"><a href="payment.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-current-gradiant text-white feather-credit-card font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Payment</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li>
+                                    <li class="list-inline-item d-block me-0"><a href="notification.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-blue-gradiant text-white feather-bell font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Notification</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li>
+                                    <li class="list-inline-item d-block me-0"><a href="default.html" class="pt-2 pb-2 d-flex align-items-center"><i class="btn-round-sm bg-red-gradiant text-white feather-lock font-xss me-3"></i> <h4 class="fw-600 font-xsss ls-0 text-grey-700 mb-0 mt-0">Logout</h4><i class="ti-angle-right font-xsssss text-grey-500 ms-auto mt-1"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 pb-5 pt-4 ps-4">
+                        <div class="card border-0">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="card bg-white rounded-6 border-0 shadow-xss p-0">
+                                        <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                            <div>
+                                                <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                    <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                     4321 4432 6565 **** 
+                                                </h4>
+                                            </div>
+                                            <div class="round float-right mb-2">
+                                                <input id="radio-17" class="radio-custom" name="radio-group" type="radio" checked="">
+                                                <label for="radio-17" class="radio-custom-label m-0"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-white rounded-6 border-0 shadow-xss mt-3 p-0">
+                                        <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                            <div>
+                                                <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                    <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                    ***port@gmail.com
+                                                </h4>
+                                            </div>
+                                            <div class="round float-right mb-2">
+                                                <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                                                <label for="radio-2" class="radio-custom-label m-0"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-white rounded-6 border-0 shadow-xss mt-3 p-0">
+                                        <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                            <div>
+                                                <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                    <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                     4321 4432 6565 **** 
+                                                </h4>
+                                            </div>
+                                            <div class="round float-right mb-2">
+                                                <input id="radio-41" class="radio-custom" name="radio-group" type="radio">
+                                                <label for="radio-41" class="radio-custom-label m-0"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-white rounded-6 border-0 shadow-xss mt-3 p-0 xs-mb-3">
+                                        <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                            <div>
+                                                <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                    <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                     **herry@payoner.com 
+                                                </h4>
+                                            </div>
+                                            <div class="round float-right mb-2">
+                                                <input id="radio-42" class="radio-custom" name="radio-group" type="radio">
+                                                <label for="radio-42" class="radio-custom-label m-0"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="rounded-10 bg-greylight bg-dark-black h-100 p-4">
+                                        <div class="col-lg-12 ps-0">
+                                            
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="item ms-auto me-auto mt-0 w-100 h-150 bg-white rounded-10 text-left shadow-lg ps-3 pt-2 align-items-end flex-column d-flex">
+                                                <div class="card border-0 bg-transparent-card shadow-none p-0 text-left w-100">
+                                                    <div class="row">
+                                                        <div class="col-6 ps-2">
+                                                            <img src="https://via.placeholder.com/45x45.png" alt="icon" class="w-60 float-left d-inline-block">
+                                                        </div>
+                                                        <div class="col-6 text-right pe-4">
+                                                            <img src="https://via.placeholder.com/45x45.png" alt="icon" class="w-30 float-end d-inline-block mt-2 me-2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card border-0 bg-transparent-card shadow-none p-0 text-left w-100 mt-auto">
+                                                    <h4 class="text-grey-900 font-xss fw-700 mont-font text-dark-color ls-6">****  ****  ****  2234 <span class="d-block fw-500 text-grey-500 font-xssss mt-0 mb-3 text-dark-color ls-0">Credit Card</span></h4>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="card bg-transparent p-0 mt-4 mb-0 border-0 shadow-none">
+                                            <h4 class="font-xsssss fw-700 ls-3 mb-4">ADD NEW CARD</h4>
+                                            <div class="form-group mb-3">
+                                                <input type="text" class="form-control font-xssss fw-600 bg-white border-0" placeholder="Card Number">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" class="form-control font-xssss fw-600 bg-white border-0" placeholder="Card Holder Name">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 pe-2">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control font-xssss fw-600 bg-white border-0" placeholder="Month">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 ps-2">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control font-xssss fw-600 bg-white border-0" placeholder="Year">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input font-xs" type="checkbox" value="Drinks" id="flexCheckStock">
+                                                <label class="form-check-label font-xssss fw-600" for="flexCheckStock">Save as default</label>
+                                            </div>
+                                            <a href="#" class="w-100 bg-black-08 text-white font-xsssss p-3 ls-3 fw-700 rounded-6 text-center btn mt-2">SAVE</a>
+                                             
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- FOOTER WRAPPER -->
+        <div class="upper-footer">
+            <div class="container pt-5 pb-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 xs-mb-4 md-mb-3 text-start">
+                        <i class="ti-shopping-cart text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">100% Secure Payments</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">100% Payment Protection.</p>
+                    </div>                 
+                    
+                    <div class="col-lg-3 col-md-6 xs-mb-4 md-mb-3 text-start">
+                        <i class="ti-headphone-alt text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">Support</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">Alway online feedback 24/7</p>
+                    </div>                 
+                    <div class="col-lg-3 col-md-6 md-mb-3 text-start">
+                        <i class="ti-lock text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">Trust pay</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">Easy Return Policy.</p>
+                    </div> 
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <i class="ti-reload text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">Return and Refund</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">100% money back guarantee</p>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12"><hr /></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt-5 mt-5"></div>
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>FRUIT & VEGETABLES</h3>
+                        <ul class="menu">
+                            <li ><a href="#">Fresh Vegetables</a></li>
+                            <li ><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li ><a href="#">Fresh Fruits</a></li>
+                            <li ><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li ><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li ><a href="#">Packaged Produce</a></li>
+                            <li ><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>BREAKFAST & DAIRY</h3>
+                        <ul class="menu">
+                            <li ><a href="#">Fresh Vegetables</a></li>
+                            <li ><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li ><a href="#">Fresh Fruits</a></li>
+                            <li ><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li ><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li ><a href="#">Packaged Produce</a></li>
+                            <li ><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                     
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>BEVERAGES</h3>
+                        <ul class="menu">
+                            <li ><a href="#">Packaged Produce</a></li>
+                            <li ><a href="#">Party Trays</a></li>
+                            <li ><a href="#">Fresh Vegetables</a></li>
+                            <li ><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li ><a href="#">Fresh Fruits</a></li>
+                            <li ><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li ><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li ><a href="#">Packaged Produce</a></li>
+                            <li ><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>FRUIT & VEGETABLES</h3>
+                        <ul class="menu">
+                            <li ><a href="#">Fresh Vegetables</a></li>
+                            <li ><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li ><a href="#">Fresh Fruits</a></li>
+                            <li ><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li ><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li ><a href="#">Packaged Produce</a></li>
+                            <li ><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 pt-5 mt-5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-white pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-sm-start xs-mb-3"><a href="#"><img src="images/logo.png" alt="logo" class="w-125"></a></div>
+                    <div class="col-md-8 text-center text-sm-end xs-mb-3">
+                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-facebook"><i class="ti-facebook text-white"></i></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-twiiter"><i class="ti-twitter-alt text-white"></i></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-linkedin"><i class="ti-linkedin text-white"></i></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-instagram"><i class="ti-instagram text-white"></i></a>
+                    </div>
+                    <div class="col-md-8 text-center d-none d-xs-block ">
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                    </div>
+                    </div>
+                    <div class="col-lg-12"><div class="border-bottom-light mt-5"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-white pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-sm-start xs-mb-3"><p class="text-grey-500 fw-500 font-xssss mb-0">@ Copyright 2021 All rights reserved.</p></div>
+                    <div class="col-md-6 text-center text-sm-end"><img src="https://via.placeholder.com/320x28.png" alt="payment"></div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER WRAPPER -->
+    
+
+    <!-- main wrapper  -->
+
+    <!-- LOCATION MODAL -->
+    <div class="modal fade modal-scrollable" id="locationmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 320px;">
+            <div class="modal-content theme-dark-bg p-4">
+                <button type="button" class="btn-close z-index-5 posa right-0 top-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body p-0 vw100 text-center pt-3 pb-0">
+                    <i class="feather-map-pin bg-greylight text-grey-900 btn-round-xxxl font-xl text-center rounded-6"></i>
+                    <h2 class="font-xss fw-700 text-grey-700 mt-4">Select your location</h2>
+                    <p class="text-grey-500 font-xsssss mt-1">Implementation of technologies to store <br> unchange data based on specific</p>
+                    <div class="inner-addon left-addon">
+                        <input type="text" class="form-control ps-5 font-xssss border-sizelg rounded-6 bg-color-none fw-600 border text-grey-500" value="675 Camac Street Down">
+                        <i class="ti-location-arrow text-current ps-3 font-xss posa left-0 mt-3"></i>
+                    </div>
+                    <a href="#" class="btn rounded-6 w-100 lh-2 d-block p-3 mt-2 text-white bg-current font-xssss text-uppercase fw-600 ls-3" data-dismiss="modal" aria-label="Close">Current Location </a>
+                </div>
+            </div>
+        </div>              
+    </div>
+
+    
+
+    <!-- MENU MODAL -->
+    <div class="modal fade left modal-scrollable" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
+                <button type="button" class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-4 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body vw100 text-start p-0 h-100">
+                    <div class="card p-4 border-0 text-start h-100 ">
+                        <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 d-block ls-0"> Menu</h4>
+                        
+                        <ul class="navbar-nav">
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Home </a>
+                                <ul class="dropdown-menu border-0 shadow-xss">
+                                  <li><a class="dropdown-item" href="g-1.html"> Grocery One</a></li>
+                                  <li><a class="dropdown-item" href="g-2.html"> Grocery Two </a></li>
+                                  <li><a class="dropdown-item" href="g-3.html"> Grocery Three </a></li>
+                                  <li><a class="dropdown-item" href="g-4.html"> Grocery Four</a></li>
+                                  <li><a class="dropdown-item" href="g-5.html"> Grocery Five</a></li>
+                                  <li><a class="dropdown-item" href="g-6.html"> Grocery Six </a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Shop <span class="bg-danger">New</span></a>
+                                <ul class="dropdown-menu border-0 shadow-xss">
+                                  <li><a class="dropdown-item" href="shop-list-1.html"> Shop One</a></li>
+                                  <li><a class="dropdown-item" href="shop-list-2.html"> Shop Two </a></li>
+                                  <li><a class="dropdown-item" href="shop-list-3.html"> Shop Three </a></li>
+                                  <li><a class="dropdown-item" href="shop-list-4.html"> Shop Four</a></li>
+                                  <li><a class="dropdown-item" href="shop-list-5.html"> Shop Five </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                                <ul class="dropdown-menu border-0 shadow-xss">
+                                  <li><a class="dropdown-item" href="dashboard.html"> Dashboard</a></li>
+                                  <li><a class="dropdown-item" href="address.html"> Saved Address </a></li>
+                                  <li><a class="dropdown-item" href="orders.html"> Orders </a></li>
+                                  <li><a class="dropdown-item" href="coupon.html"> Coupon</a></li>
+                                  <li><a class="dropdown-item" href="payment.html"> Payment </a></li>
+                                  <li><a class="dropdown-item" href="notification.html"> Notification </a></li>
+                                  <li><a class="dropdown-item" href="default.html"> Logout </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Product</a>
+                                <ul class="dropdown-menu border-0 shadow-xss">
+                                  <li><a class="dropdown-item" href="single-product-1.html"> Single One</a></li>
+                                  <li><a class="dropdown-item" href="single-product-2.html"> Single Two </a></li>
+                                  <li><a class="dropdown-item" href="single-product-3.html"> Single Three </a></li>
+                                  <li><a class="dropdown-item" href="single-product-4.html"> Single Four</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                        <ul class="dropdown-menu border-0 shadow-xss">
+                                          <li><a class="dropdown-item" href="about.html"> About</a></li>
+                                          <li><a class="dropdown-item" href="contact.html"> Contact </a></li>
+                                          <li><a class="dropdown-item" href="blog.html"> Blog </a></li>
+                                          <li><a class="dropdown-item" href="blog-single.html"> Single Blog</a></li>
+                                          <li><a class="dropdown-item" href="faq.html"> Faq</a></li>
+                                        </ul>
+                                    </li>
+                        </ul>
+                        <div class="card h-auto mt-auto p-4 w-100 rounded-10 theme-bg border-0 text-center bg-image-cover" style="background-image: url(https://via.placeholder.com/1071x319.png);">
+                            <div class="card-body text-center p-2 mb-2">
+                                <h4 class="text-grey-900 white-text mb-3 font-sm fw-500">Become a <b class="text-grey-900 white-text">pro</b> <br> Get more <b class="text-grey-900 white-text">features</b></h4>
+                                <a href="login-one.html" class="btn rounded-25 bg-current white-text text-white w-150">Upgrade</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>              
+    </div>
+    <!-- CATEGORY MODAL -->
+
+    <!-- CATEGORY MODAL -->
+    <div class="modal fade left modal-scrollable" id="categorymodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
+                <button type="button" class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body vw100 text-start p-0">
+                    <div class="card p-4 border-0 text-start">
+                        <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 mt-n2 d-block ls-0"> Categories</h4>
+                        <ul class="ms-0 ps-0 border-0 mt-3">
+                            <li><a href="#" class="d-flex" data-bs-toggle="dropdown"> Beverages <i class="feather-chevron-right"></i></a>
+                                <ul class="submenu dropdown-menu pt-0 pb-0 ps-3">
+                                    <li><a class="dropdown-item" href="#">Water</a></li>
+                                    <li><a class="dropdown-item" href="#">Sparkling Water</a></li>
+                                    <li><a class="dropdown-item" href="#">Soda & Pop</a></li>
+                                    <li><a class="dropdown-item" href="#">Coffee</a></li>
+                                    <li><a class="dropdown-item" href="#">Milk & Plant-Based Milk</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="d-flex"> Biscuits & Snacks <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Breads & Bakery <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Breakfast & Dairy <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Frozen Foods <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Fruits & Vegetables <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Grocery & Staples <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Household Needs <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex"> Meats & Seafood <i class="feather-chevron-right"></i></a></li>
+
+                            <li><a href="#" class="d-flex">Eggs Substitutes <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex">Honey Vegetables <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex">Marmalades Staples <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex">Sour Cream and Dips <i class="feather-chevron-right"></i></a></li>
+                            <li><a href="#" class="d-flex">Yogurt Seafood <i class="feather-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>              
+    </div>
+    <!-- CATEGORY MODAL -->
+    <!-- CART MODAL -->
+    <div class="modal fade right modal-scrollable" id="cartmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
+            <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
+                <button type="button" class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="cart-box vh-100" >
+                    <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column">
+                        <div class="card w-100 p-4 pb-0 border-0 text-start">
+                            <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 mt-n2 d-block"> Cart</h4>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5"><a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a></div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                    <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                    <div class="cart-count float-end ">
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" class="open-font" value="1">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5"><a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a></div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                    <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>49 </h6>
+                                    <div class="cart-count float-end ">
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" class="open-font" value="1">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5"><a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a></div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">100gm</span>
+                                    <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>99 </h6>
+                                    <div class="cart-count float-end ">
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" class="open-font" value="1">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5"><a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a></div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
+                                    <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>39 </h6>
+                                    <div class="cart-count float-end ">
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" class="open-font" value="1">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                        <div class="card w-100 p-4 pt-0 border-0 text-start mt-auto">
+                            <!-- <hr /> -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h4 class="text-grey-900 font-xssss fw-600 mb-2 d-flex">Subtotal <span class="ms-auto text-grey-500">$ 59.99</span></h4>
+                                    <h4 class="text-grey-900 font-xssss fw-600 mb-3 d-flex">Tax <span class="ms-auto text-grey-500">$ 0.99</span></h4>
+                                    <h4 class="text-grey-900 font-xss fw-600 mb-3 d-flex">Total <span class="ms-auto">$ 60.99</span></h4>
+                                    <h5 class="bg-greylight p-4 rounded-6 mt-3 mb-3 w-100 fw-600 text-grey-500 font-xssss d-flex">Apply Promo Code : <span class="ms-auto fw-700 text-grey-900">2 Promos</span></h5>
+                                </div>
+                            </div>
+
+                            <a href="#" class="w-100 bg-current text-white rounded-6 text-center btn" id="checkout2">Checkout</a>
+                        </div>      
+                    </div>
+                </div>
+                <div class="checkout-box vh-100" style="display: none;">
+                    <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column">
+                        <div class="card w-100 p-4 pb-0 border-0 text-start">
+                            <h4 class="fw-700 font-lg text-grey-900 text-start mb-4 mt-n2 d-block"> Checkout</h4>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="Name">Name</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter your name" id="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Email">Email</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter your email" id="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Phone">Phone</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter your phone" id="Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Address">Address</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter your address" id="Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="Zip">Zip Code</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter here" id="Zip">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="City">City</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter here" id="City">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="Location">Location</label>
+                                        <input type="text" class="form-control bg-greylight border-0" placeholder="Enter here location" id="Location">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input font-xs" type="checkbox" value="Drinks" id="flexCheckStock7">
+                                        <label class="form-check-label" for="flexCheckStock7">Save shipping address</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>              
+                        <div class="card w-100 p-4 pt-0 border-0 text-start mt-auto">
+                            <a href="#" class="w-100 bg-current text-white rounded-6 text-center btn" id="payment">Payment</a>
+                        </div>      
+                    </div>
+                </div>
+
+                <div class="payment-box vh-100" style="display: none;">
+                    <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column">
+                        <div class="card w-100 p-4 pb-0 border-0 text-start">
+                            <h4 class="fw-700 font-lg text-grey-900 text-start mb-4 mt-n2 d-block"> Payment</h4>
+                            <div class="col-lg-12 mt-2">
+                    
+                        
+                                <div class="card bg-white rounded-6 border-0 shadow-xss p-0">
+                                    <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                        <div>
+                                            <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                 4321 4432 6565 **** 
+                                            </h4>
+                                        </div>
+                                        <div class="round float-right mb-2">
+                                            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked="">
+                                            <label for="radio-1" class="radio-custom-label m-0"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="card bg-white rounded-6 border-0 shadow-xss mt-3 p-0">
+                                    <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                        <div>
+                                            <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                ***port@gmail.com
+                                            </h4>
+                                        </div>
+                                        <div class="round float-right mb-2">
+                                            <input id="radio-21" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-21" class="radio-custom-label m-0"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                
+                                <div class="card bg-white rounded-6 border-0 shadow-xss mt-3 p-0">
+                                    <div class="card-body d-flex justify-content-between align-items-end p-4">
+                                        <div>
+                                            <h4 class="text-grey-600 mb-0 d-flex font-xsss align-items-center justify-content-between mt-0 fw-600">
+                                                <img src="https://via.placeholder.com/45x45.png" alt="image" class="float-left me-4">
+                                                 4321 4432 6565 **** 
+                                            </h4>
+                                        </div>
+                                        <div class="round float-right mb-2">
+                                            <input id="radio-417" class="radio-custom" name="radio-group" type="radio">
+                                            <label for="radio-417" class="radio-custom-label m-0"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card bg-greylight p-4 mt-3 mb-3 border-0">
+                                    <h4 class="font-xsssss fw-700 ls-3 mb-4">ADD NEW CARD</h4>
+
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control bg-white border-0" placeholder="Card Number">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input type="text" class="form-control bg-white border-0" placeholder="Card Holder Name">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 pe-2">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control bg-white border-0" placeholder="Month">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 ps-2">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control bg-white border-0" placeholder="Year">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input font-xs" type="checkbox" value="Drinks" id="flexCheckStock9">
+                                        <label class="form-check-label" for="flexCheckStock9">Save as default</label>
+                                    </div>
+                                    <a href="#" class="w-100 bg-black-08 text-white rounded-6 text-center btn mt-2">Save</a>
+                                     
+                                </div>
+                                
+                            </div>
+                        </div>              
+                        <div class="card w-100 p-4 pt-0 border-0 text-start mt-auto">
+                            <a href="#" class="w-100 bg-current text-white rounded-6 text-center btn" id="checkout3">place Order</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </div>              
+    </div> 
+    <!-- CART MODAL --> 
+
+
+    <script src="js/plugin.js"></script>
+    <script src="js/scripts.js"></script>
+
+    
+</body>
+
+</html>

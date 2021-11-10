@@ -1,0 +1,141 @@
+
+.mont-font {font-family: "Montserrat", sans-serif; }
+.roboto-font {font-family: 'Roboto', sans-serif;}
+.open-font {font-family: 'Open Sans', sans-serif;}
+
+.btn-round-xss { width: 8px; height: 8px; border-radius: 8px; display: inline-block;line-height: 25px !important; text-align: center; i {line-height: 25px !important; }}
+.btn-round-xs { width: 25px; height: 25px; border-radius: 25px; display: inline-block;line-height: 25px !important; text-align: center; i {line-height: 25px !important; }}
+.btn-round-sm { width: 35px; height: 35px; border-radius: 35px; display: inline-block;line-height: 35px !important; text-align: center; i {line-height: 35px !important; }}
+.btn-round-md { width: 45px; height: 45px; border-radius: 45px; display: inline-block;line-height: 45px !important; text-align: center; i {line-height: 45px; }}
+.btn-round-lg { width: 50px; height: 50px; border-radius: 50px; display: inline-block;line-height: 50px; text-align: center; i {line-height: 50px; }}
+.btn-round-xl { width: 60px; height: 60px; border-radius: 60px; display: inline-block;line-height: 60px; text-align: center; i {line-height: 60px; } img {line-height: 60px; }}
+.btn-round-xxl { width: 70px; height: 70px; border-radius: 70px; display: inline-block;line-height: 70px; text-align: center; i {line-height: 70px; }}
+.btn-round-xxxl { width: 80px; height: 80px; border-radius: 80px; display: inline-block;line-height: 80px; text-align: center; i {line-height: 80px; }}
+.btn-round-xxxxl { width: 110px; height: 110px; border-radius: 110px; display: inline-block;line-height: 110px; text-align: center; i {line-height: 110px; }}
+
+.z-index-1 {z-index: 2; position: relative;}
+.z-index-5 {z-index: 5; position: relative;}
+.z-index-10 {z-index: 10; position: relative;}
+.z-index-15 {z-index: 15; position: relative;}
+
+
+.badge-primary   {background-color: $primary;} 
+.badge-secondary {background-color: $secondary;} 
+.badge-success   {background-color: $success;} 
+.badge-info      {background-color: $info;} 
+.badge-warning   {background-color: $warning;} 
+.badge-danger    {background-color: $danger;} 
+.badge-light     {background-color: $light;} 
+.badge-dark      {background-color: $dark;} 
+
+.ls-0 {letter-spacing: -0.4px;}
+.ls-1 {letter-spacing: 0.4px;}
+.ls-2 {letter-spacing: 0.6px;}
+.ls-3 {letter-spacing: 1px;}
+.ls-4 {letter-spacing: 1.2px;}
+.ls-5 {letter-spacing: 1.4px;}
+.ls-6 {letter-spacing: 2px;}
+.ls-10 {letter-spacing: 5px;}
+
+.lh-1 {line-height: 1 !important; }
+.lh-2 {line-height: 1.2 !important;}
+.lh-3 {line-height: 1.4 !important;}
+.lh-4 {line-height: 1.6 !important;}
+.lh-5 {line-height: 2 !important;}
+
+.lh-16 {line-height: 16px !important;}
+.lh-22 {line-height: 22px !important;}
+.lh-24 {line-height: 24px !important;}
+.lh-26 {line-height: 26px !important;}
+.lh-28 {line-height: 28px !important;}
+.lh-30 {line-height: 30px !important;}
+.lh-32 {line-height: 32px !important;}
+
+.mt-n10 {margin-top: -100px; }
+.mt-n7 {margin-top: -75px; }
+.ps-6 {padding-left: 34px !important;}
+
+.font-xssssss {font-size: $font-xssssss !important; }
+.font-xsssss {font-size: $font-xsssss !important; }
+.font-xssss {font-size: $font-xssss !important; }
+.font-xsss {font-size: $font-xsss !important; }
+.font-xss {font-size: $font-xss !important; }
+.font-xs {font-size: $font-xs !important; }
+.font-sm {font-size: $font-sm !important; }
+.font-md {font-size: $font-md !important; }
+.font-lg {font-size: $font-lg !important; }
+.font-xl {font-size: $font-xl !important; }
+.font-xxl {font-size: $font-xxl !important; }
+
+.display1-size {font-size: $display1-size !important; }   
+.display2-size {font-size: $display2-size !important; }   
+.display3-size {font-size: $display3-size !important; }   
+.display4-size {font-size: $display4-size !important; }
+.display5-size {font-size: $display5-size !important; }
+
+
+.shadow-md {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;}
+.shadow-xs {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.03) !important;}
+.shadow-xss {box-shadow:0 8px 30px rgba(0, 0, 0, 0.05) !important;}
+
+.rotate-90 {transform: rotate(90deg);}
+.rotate-180 {transform: rotate(180deg);}
+
+.border.border-size-sm {border-width: 1px !important; }
+.border.border-size-md {border-width: 2px !important; }
+.border.border-size-lg {border-width: 3px !important; }
+.border-light {border-color: #eee !important;}
+.border-dark {border-color: #999 !important;}
+.border-right-light {border-right: 1px #eee solid;}
+.border-bottom-light {border-bottom: 1px #eee solid;}
+.border-bottom-dark {border-bottom: 2px #333 solid;}
+.border-bottom-blue {border-bottom: 1px #1254a1 solid;}
+.border-dashed {border:2px #ddd dashed !important;}
+.border-black {border:2px #000 dashed !important;}
+.border-right-0.card {border-right: 0 !important;}
+.border-danger {border:2px $danger solid;}
+
+
+// BG IMAGE
+.bg-image-cover {background-size: cover;}
+.bg-image-contain {background-size: contain;}
+.bg-no-repeat {background-repeat: no-repeat;}
+.bg-image-center {background-position: center center;}
+.bg-image-topcenter {background-position: top 30px center;}
+.bg-image-bottomcenter {background-position: bottom center !important;}
+.bg-image-right {background-position: center right;}
+
+
+// .table-responsive { overflow-x: inherit !important;}
+
+
+
+.ovh {overflow: hidden;}
+.ovv {overflow: visible;}
+.posr {position: relative !important;}
+.posa {position: absolute;}
+
+.top-0 {top:0px !important;}
+.top-15 {top:15px !important;}
+.top-20 {top:20px !important;}
+.top-25 {top:25px !important;}
+.bottom-0 {bottom:0px !important;}
+.bottom-15 {bottom:15px !important;}
+.bottom-20 {bottom:20px !important;}
+.bottom-25 {bottom:25px !important;}
+
+.embed-responsive {position: relative;display: block;width: 100%;padding: 0;overflow: hidden; }
+.embed-responsive-16by9::before {padding-top: 56.25%;content: '';display: block;}
+.embed-responsive-21by9::before {padding-top: 56.25%;content: '';display: block;}
+.embed-responsive video { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0;}
+
+.main-wrapper {
+	&.center-wrap {
+		max-width: 1150px; 
+		margin:0 auto; 
+		background-color: #fff;
+		box-shadow:0 8px 30px rgba(0, 0, 0, 0.05) !important;
+	}
+}
+
+

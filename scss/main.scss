@@ -1,0 +1,43 @@
+/*-----------------------------------------------------------
+    Theme Name: Orgomart
+    Theme URI: http://uitheme.net/orgomart/
+    Author: Uttam D
+    Author URI: http://uitheme.net/
+    Description: Online Food Ordering HTML Template
+    Version: 1.0.0
+-------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+    Table of Content: 
+
+    
+    
+    1. Abstract
+    2. Bootstrap CSS
+    3. Base
+    4. Component
+    5. Pages
+    7. Header
+    8. Footer
+    
+    
+*/
+
+@import "./abstract/variable";
+@import "./abstract/utilities";
+@import "./abstract/abstract";
+@import "./../vendor/icon/feather.css";
+@import "./../vendor/icon/themify-icons.css";
+@import "./../vendor/bootstrap/scss/bootstrap.scss";
+@import "./../vendor/owl-carousel/css/owl.carousel.min.css";
+@import "./../vendor/owl-carousel/css/owl.theme.default.css";
+
+
+@import "./base/base";
+@import "./components/components";
+@import "./pages/pages";
+
+
+
+
+

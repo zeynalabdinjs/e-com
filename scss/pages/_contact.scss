@@ -1,0 +1,23 @@
+.contact-wrap {
+    z-index: 1;
+    top:-100px; 
+    padding: 60px 80px 70px 80px;  
+    @include media-breakpoint-down(lg) {
+        padding: 50px; 
+    }
+    @include media-breakpoint-down(md) {
+        padding: 40px 30px; 
+        .display3-size {font-size: 40px !important; margin-bottom: 30px !important;  }
+    }
+}
+
+.contact-wrapper {
+    padding: 80px; 
+    max-width: 550px; 
+    @include media-breakpoint-down(lg) {
+        padding: 50px; 
+        max-width: 500px;
+        margin-top: 80px; 
+        margin-bottom: 50px; 
+    }
+}
