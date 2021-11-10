@@ -16972,7 +16972,7 @@ select.sort {
 }
 .categories{
   width: 100%;
-  height: calc(100vh - 69.67px);
+  height: calc(100% - 69.67px);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
