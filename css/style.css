@@ -15490,7 +15490,7 @@ select.sort {
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
-  width: 91%;
+  min-width: 1150px;
 }
 
 
