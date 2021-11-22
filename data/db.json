@@ -1,6 +1,6 @@
 [{
         "id": 0,
-        "name": "itler",
+        "name": "İtlər",
         "background": "#fff url(../images/dogs.png) no-repeat",
         "Children": [{
                 "id": "0",
@@ -22,7 +22,7 @@
     },
     {
         "id": 1,
-        "name": "pisikler",
+        "name": "Pişiklər",
         "background": "#fff url(../images/cats.png) no-repeat",
         "Children": [{
                 "id": "0",

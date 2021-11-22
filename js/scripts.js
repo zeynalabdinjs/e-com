@@ -36,7 +36,6 @@ $(document).ready(function() {
 
 
     // Category MENU
-    let Array = [5, "Zeynal", "Qedirov"];
 
     $(".my-menu ul li, .overlay")
         .mouseenter(function() {
@@ -54,6 +53,7 @@ $(document).ready(function() {
             $.each(data[0].Children, function(i) {
                 $(".overlay>ul").append(`<li><a href="">${data[0].Children[i].name}</a></li>`)
             })
+            $(".sub-menu-name").text(data[0].name);
             $(".overlay").css("background", data[0].background)
 
         })
@@ -63,7 +63,9 @@ $(document).ready(function() {
             $.each(data[1].Children, function(i) {
                 $(".overlay>ul").append(`<li><a href="">${data[1].Children[i].name}</a></li>`)
             })
+            console.log(data[1].name)
             $(".overlay").css("background", data[1].background)
+            $(".sub-menu-name").text(data[1].name);
 
         })
     })
