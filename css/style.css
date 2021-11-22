@@ -16869,7 +16869,7 @@ select.sort {
     width: 100%;
     height: calc(100vh - 69.67px);
     position: fixed;
-    bottom: 0;
+    top: 69.67px;
     right: 0;
     transform: translateX(100%);
     transition: 0.3s ease-in-out;
