@@ -1,0 +1,45 @@
+[{
+        "id": 0,
+        "name": "itler",
+        "background": "#fff url(../images/dogs.png) no-repeat",
+        "Children": [{
+                "id": "0",
+                "name": "İt Oyuncaq"
+            },
+            {
+                "id": "1",
+                "name": "İt Yemek"
+            },
+            {
+                "id": "2",
+                "name": "İt Yuva"
+            },
+            {
+                "id": "3",
+                "name": "İt Dərman"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "pisikler",
+        "background": "#fff url(../images/cats.png) no-repeat",
+        "Children": [{
+                "id": "0",
+                "name": "Pişik Oyuncaq"
+            },
+            {
+                "id": "1",
+                "name": "Pişik Yemek"
+            },
+            {
+                "id": "2",
+                "name": "Pişik Yuva"
+            },
+            {
+                "id": "3",
+                "name": "Pişik Dərman"
+            }
+        ]
+    }
+]

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     "use strict";
 
     PageScroll();
@@ -16,7 +16,7 @@ $(document).ready(function () {
     handlePreloader();
 
     //                 <-- NAVBAR
-    window.onscroll = function () { myFunction() };
+    window.onscroll = function() { myFunction() };
 
     // Get the navbar
     var navbar = document.getElementById("lower-header");
@@ -36,9 +36,39 @@ $(document).ready(function () {
 
 
     // Category MENU
-    $("#category-btn").on("click", () => {
-        $(".overlay").toggleClass("active");
+    let Array = [5, "Zeynal", "Qedirov"];
+
+    $(".my-menu ul li, .overlay")
+        .mouseenter(function() {
+            $(".overlay").addClass("active")
+        })
+        .mouseleave(function() {
+            $(".overlay").removeClass("active")
+        })
+
+
+
+    var myJson = $.getJSON("../data/db.json", function(data) {
+        $(".my-menu>ul>li:nth-child(1)").mouseenter(data, function() {
+            $(".overlay>ul>li").remove();
+            $.each(data[0].Children, function(i) {
+                $(".overlay>ul").append(`<li><a href="">${data[0].Children[i].name}</a></li>`)
+            })
+            $(".overlay").css("background", data[0].background)
+
+        })
+
+        $(".my-menu>ul>li:nth-child(2)").mouseenter(data, function() {
+            $(".overlay>ul>li").remove();
+            $.each(data[1].Children, function(i) {
+                $(".overlay>ul").append(`<li><a href="">${data[1].Children[i].name}</a></li>`)
+            })
+            $(".overlay").css("background", data[1].background)
+
+        })
     })
+
+
 
 
     $(".category-mobile").on("click", () => {
@@ -192,26 +222,26 @@ $(document).ready(function () {
 
 
     $(".nav-item-toggle").on({
-        mouseenter: function () {
+        mouseenter: function() {
             $(this).children().addClass('show');
         },
-        mouseleave: function () {
+        mouseleave: function() {
             $(this).children().removeClass('show');
         }
     });
 
-    $('.toggle-nav').on('click', function () {
+    $('.toggle-nav').on('click', function() {
         $('.navigation,.main-content,.nav-header').toggleClass('menu-active');
         return false;
     });
 
-    $('.wishlist-btn').on('click', function () {
+    $('.wishlist-btn').on('click', function() {
         $(this).find('i').toggleClass('active');
         return false;
     });
 
 
-    $('.category-card').on('click', function () {
+    $('.category-card').on('click', function() {
         $('.category-card').removeClass('active');
         $(this).addClass('active');
         return false;
@@ -222,22 +252,22 @@ $(document).ready(function () {
 
 
     // navigation slide menu mobile
-    $('.nav-menu').on('click', function () {
+    $('.nav-menu').on('click', function() {
         $(this).toggleClass('active');
         $('.navigation').toggleClass('nav-active');
     });
-    $('.close-nav').on('click', function () {
+    $('.close-nav').on('click', function() {
         $('.navigation').removeClass('nav-active');
         return false;
     });
-    $('.nav-link').on('click', function () {
+    $('.nav-link').on('click', function() {
         $('.nav-link').removeClass('active');
         $(this).addClass('active');
         return false;
     });
 
 
-    $('input[name="color-radio"]').on('change', function () {
+    $('input[name="color-radio"]').on('change', function() {
         if (this.checked) {
             $('body').removeClass('color-theme-teal color-theme-cadetblue color-theme-pink color-theme-deepblue color-theme-blue color-theme-red color-theme-black color-theme-gray color-theme-orange color-theme-yellow color-theme-green color-theme-white color-theme-brown color-theme-darkgreen color-theme-deeppink color-theme-darkorchid');
             $('body').addClass('color-theme-' + $(this).val());
@@ -247,16 +277,16 @@ $(document).ready(function () {
 
 
 
-    $('#checkout').on('click', function () {
+    $('#checkout').on('click', function() {
         $('.cart-box').fadeOut(0);
         $('.checkout-box').fadeIn();
     });
-    $('#payment').on('click', function () {
+    $('#payment').on('click', function() {
         $('.checkout-box').fadeOut(0);
         $('.payment-box').fadeIn();
     });
 
-    $(window).on('load', function () {
+    $(window).on('load', function() {
         $('#modalSubscribe').modal('show');
     });
 
@@ -271,7 +301,7 @@ $(document).ready(function () {
 
 
 function PageScroll() {
-    $(".scroll-tiger").on("click", function (e) {
+    $(".scroll-tiger").on("click", function(e) {
         var $anchor = $(this);
         $("html, body").stop().animate({
             scrollTop: $($anchor.attr("href")).offset().top - 0
@@ -281,5 +311,3 @@ function PageScroll() {
 
     });
 }
-
-
