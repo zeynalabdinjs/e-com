@@ -17106,7 +17106,7 @@ select.sort {
     }
     .productList .my-card {
         max-width: 150px !important;
-        width: 90% !important;
+        width: 100% !important;
         height: 270px !important;
     }
     .productList .buy {
@@ -17129,6 +17129,9 @@ select.sort {
 }
 
 @media (max-width: 360px) {
+    .productList .my-card {
+        width: 90% !important;
+    }
     .productList .price {
         transform: scale(0.85);
         font-size: 14px;
