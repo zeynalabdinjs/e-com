@@ -16865,7 +16865,7 @@ select.sort {
     background: #fff;
     z-index: 1000;
     display: flex;
-    border-top: 1px solid #9365ff;
+    border-top: 2px solid rgba(0, 184, 15, 0.15);
     width: 100%;
     height: calc(100vh - 69.67px);
     position: fixed;
