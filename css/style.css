@@ -17270,3 +17270,67 @@ select.sort {
 .productList .wish-list i.active::before {
     content: "\ead5";
 }
+
+
+/* Login and Register page select user*/
+
+.select-user {
+    position: relative;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-user .market {
+    margin-right: 10px;
+}
+
+.select-user :is(.market,
+.user):active {
+    transform: translateY(-20px);
+}
+
+.select-user :is(.market,
+.user) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 60px;
+    border-radius: 7px;
+    color: white;
+    border: none;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s ease-out;
+}
+
+:is(.select-location,
+.market-name) {
+    display: none;
+}
+
+.select-location.active,
+.market-name.active {
+    display: block;
+}
+
+.select-location select {
+    padding-bottom: -10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px !important;
+    color: #6c757d !important;
+}
+
+.select-location .form-control {
+    padding-top: 0 !important;
+}

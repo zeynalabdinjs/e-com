@@ -79,6 +79,7 @@ $(document).ready(function() {
 
 
 
+
     $(".category-mobile").on("click", () => {
         $(".category-mobile").toggleClass("active");
         $(".mobile-overlay").toggleClass("active");
@@ -90,6 +91,8 @@ $(document).ready(function() {
     $(".back").on("click", () => {
         $(".subcategories").removeClass("active");
     })
+
+
 
 
 
