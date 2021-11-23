@@ -71,6 +71,12 @@ $(document).ready(function() {
     })
 
 
+    $(function() {
+        $(".wish-list").on("click", function() {
+            $(this).find('i').toggleClass("active");
+        })
+    })
+
 
 
     $(".category-mobile").on("click", () => {
@@ -237,10 +243,10 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.wishlist-btn').on('click', function() {
-        $(this).find('i').toggleClass('active');
-        return false;
-    });
+    // $('.wishlist-btn').on('click', function() {
+    //     $(this).find('i').toggleClass('active');
+    //     return false;
+    // });
 
 
     $('.category-card').on('click', function() {
