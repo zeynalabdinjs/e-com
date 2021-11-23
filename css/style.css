@@ -17051,7 +17051,7 @@ select.sort {
 }
 
 .mobile-navigation div:active i {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
 }
 
 .mobile-navigation .add-button i {
