@@ -15269,6 +15269,7 @@ select.sort {
     transform: translateX(-50%);
     position: fixed;
     width: 91%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
 }
 
 .lower-header.bg-invert .nav-item .nav-link.dropdown-toggle:after,
@@ -16753,7 +16754,11 @@ select.sort {
 
 .main-wrapper>.lower-header {
     z-index: 10000000000;
-    max-width: 1150px;
+    max-width: 100vw;
+}
+
+.home.main-wrapper>.lower-header.active {
+    max-width: 1150px !important;
 }
 
 .main-wrapper>.lower-header.active {
@@ -16763,6 +16768,62 @@ select.sort {
 .banner-wrapper .lower-header {
     overflow: visible;
     position: relative;
+}
+
+.my-menu i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 19px !important;
+    color: rgb(0, 184, 15);
+    width: 34px;
+    height: 34px;
+    margin-right: 5px;
+}
+
+.my-menu li:nth-child(1) i {
+    background: rgba(204, 0, 255, 0.09) !important;
+}
+
+.my-menu li:nth-child(2) i {
+    background: rgba(255, 12, 0, 0.09) !important;
+}
+
+.my-menu li:nth-child(3) i {
+    background: rgba(255, 52, 5, 0.09) !important;
+}
+
+.my-menu li:nth-child(3) i {
+    background: rgba(10, 62, 205, 0.09) !important;
+}
+
+.my-menu li:nth-child(4) i {
+    background: rgba(50, 2, 245, 0.09) !important;
+}
+
+.my-menu li:nth-child(5) i {
+    background: rgba(20, 200, 5, 0.09) !important;
+}
+
+.my-menu li:nth-child(6) i {
+    background: rgba(0, 232, 255, 0.09) !important;
+}
+
+.my-menu li:nth-child(7) i {
+    background: rgba(200, 0, 200, 0.09) !important;
+}
+
+.my-menu li:nth-child(8) i {
+    background: rgba(10, 50, 255, 0.09) !important;
+}
+
+.my-menu li:nth-child(9) i {
+    background: rgba(200, 0, 255, 0.09) !important;
+}
+
+.my-menu li:nth-child(10) i {
+    background: rgba(0, 200, 255, 0.09) !important;
 }
 
 .overlay {
@@ -16988,11 +17049,11 @@ select.sort {
 
 .sub-header .back i {
     font-size: 25px;
-    color: #9365ff;
+    color: rgb(0, 184, 15);
 }
 
 .parent-name {
-    color: #9365ff;
+    color: rgb(0, 184, 15);
     font-size: 20px;
     width: 90%;
 }
@@ -17088,29 +17149,21 @@ select.sort {
     transform: translateX(-50%);
     font-family: "Montserrat", sans-serif !important;
     padding: 20px 0;
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-row: auto;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     row-gap: 1.5rem;
     overflow-x: hidden;
-}
-
-@media (max-width: 991px) {
-    .productList {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
 }
 
 @media (max-width: 768px) {
     .productList {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .productList .my-card {
-        max-width: 150px !important;
-        width: 100%;
-        height: 270px !important;
-    }
+}
+
+@media (max-width: 768px) {
     .productList .buy {
         padding: 1px 8px !important;
         font-size: 13px !important;
@@ -17130,7 +17183,7 @@ select.sort {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .productList .my-card {
         width: 90% !important;
     }
@@ -17171,7 +17224,7 @@ select.sort {
     position: relative;
     border-radius: 2px 2px 0 0;
     width: 230px;
-    height: 130px;
+    height: 150px;
     object-fit: cover;
     transition: 0.5s all ease-out;
     left: 50%;
@@ -17189,11 +17242,21 @@ select.sort {
     font-weight: 500;
 }
 
+@media (max-width: 450px) {
+    .cardBody h5 {
+        font-size: 14.5px !important;
+    }
+}
+
 .productList .card-text {
     width: 100%;
-    white-space: nowrap;
+    height: 45px;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .productList .card-about {
@@ -17201,10 +17264,6 @@ select.sort {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 13px;
-}
-
-.productList .rating i {
     font-size: 13px;
 }
 
@@ -17222,10 +17281,13 @@ select.sort {
 }
 
 .productList .buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border: 1px solid rgb(0, 184, 15);
     border-radius: 15px;
-    padding: 0px 12px;
+    padding: 0px 8px;
     background: rgb(0, 184, 15);
     color: #fff;
     position: absolute;
@@ -17239,6 +17301,10 @@ select.sort {
 .productList .buy:hover {
     background: transparent;
     color: rgb(0, 184, 15);
+}
+
+.productList .buy .bx {
+    font-size: 18px;
 }
 
 .productList .wish-list {
@@ -17333,4 +17399,10 @@ select.sort {
 
 .select-location .form-control {
     padding-top: 0 !important;
+}
+
+.banner {
+    height: 70px;
+    width: 100%;
+    background: #163a0f;
 }

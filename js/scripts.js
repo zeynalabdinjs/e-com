@@ -101,20 +101,20 @@ $(document).ready(function() {
 
 
 
-    // $('.minus').click(function () {
-    //     var $input = $(this).parent().find('input');
-    //     var count = parseInt($input.val()) - 1;
-    //     count = count < 1 ? 1 : count;
-    //     $input.val(count);
-    //     $input.change();
-    //     return false;
-    // });
-    // $('.plus').click(function () {
-    //     var $input = $(this).parent().find('input');
-    //     $input.val(parseInt($input.val()) + 1);
-    //     $input.change();
-    //     return false;
-    // });
+    $('.minus').click(function() {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.plus').click(function() {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
 
     // OWL SLIDER
     $('.category-slider').owlCarousel({
@@ -271,11 +271,13 @@ $(document).ready(function() {
         $('.navigation').removeClass('nav-active');
         return false;
     });
-    $('.nav-link').on('click', function() {
-        $('.nav-link').removeClass('active');
-        $(this).addClass('active');
-        return false;
-    });
+
+
+    // $('.nav-link').on('click', function() {
+    //     $('.nav-link').removeClass('active');
+    //     $(this).addClass('active');
+    //     return false;
+    // });
 
 
     $('input[name="color-radio"]').on('change', function() {
