@@ -15263,12 +15263,23 @@ select.sort {
     font-size: 10px;
 }
 
-.lower-header.active {
-    top: 0;
+#lower-header {
+    position: absolute;
+    top: 187.67px;
     left: 50%;
     transform: translateX(-50%);
-    position: fixed;
-    width: 91%;
+    width: 1150px !important;
+}
+
+#lower-header ul>li>a:hover {
+    color: #1ca301 !important;
+    transition: 0.5s;
+}
+
+#lower-header.active {
+    position: fixed !important;
+    top: 0;
+    width: 100vw;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
 }
 
@@ -16770,6 +16781,12 @@ select.sort {
     position: relative;
 }
 
+@media (min-width:991px) {
+    .banner-wrapper {
+        padding-top: 90px !important;
+    }
+}
+
 .my-menu i {
     display: inline-flex;
     justify-content: center;
@@ -16868,6 +16885,17 @@ select.sort {
 
 
 /* TABLET AND MOBILE */
+
+.header-menu-mob {
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.header-menu-mob.active {
+    position: fixed;
+    top: 0;
+}
 
 .header-menu-mob .text-end i {
     font-size: 30px;

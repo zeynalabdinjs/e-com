@@ -20,16 +20,25 @@ $(document).ready(function() {
 
     // Get the navbar
     var navbar = document.getElementById("lower-header");
+    var mobile_navbar = document.getElementById("header-menu-mob");
 
     // Get the offset position of the navbar
     var sticky = navbar.offsetTop;
+    var mobile_sticky = mobile_navbar.offsetTop;
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("active")
+
         } else {
             navbar.classList.remove("active");
+
+        }
+        if (window.pageYOffset >= mobile_sticky) {
+            mobile_navbar.classList.add("active")
+        } else {
+            mobile_navbar.classList.remove("active")
         }
     }
     //                   NAVBAR -->
