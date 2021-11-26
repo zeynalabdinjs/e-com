@@ -16887,13 +16887,13 @@ select.sort {
 /* TABLET AND MOBILE */
 
 .header-menu-mob {
-    position: absolute;
+    position: absolute !important;
     top: 70px;
     left: 0;
 }
 
 .header-menu-mob.active {
-    position: fixed;
+    position: fixed !important;
     top: 0;
 }
 
@@ -16908,13 +16908,15 @@ select.sort {
     color: rgb(0, 184, 15);
 }
 
-.header-menu-mob .text-center {
+.header-menu-mob .text-center,
+.mobile-overlay .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-menu-mob .text-center a {
+.header-menu-mob .text-center a,
+.mobile-overlay .logo a {
     border-bottom: 2px solid rgba(0, 184, 15, 0.25);
     font-weight: 600;
     color: rgb(0, 184, 15);
@@ -16951,23 +16953,56 @@ select.sort {
 /* Mobile category menu */
 
 .mobile-overlay {
+    padding-top: 60px;
     background: #fff;
     z-index: 1000;
     display: flex;
     border-top: 2px solid rgba(0, 184, 15, 0.15);
     width: 100%;
-    height: calc(100vh - 69.67px);
+    height: 100vh;
     position: fixed;
-    top: 69.67px;
+    top: 0;
     right: 0;
-    transform: translateX(100%);
+    transform: translateX(100%) scale(0.5);
     transition: 0.3s ease-in-out;
     visibility: hidden;
+    overflow: hidden;
+}
+
+.mobile-overlay .close-btn {
+    z-index: 100;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.mobile-overlay .logo {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    height: 35px;
+}
+
+.mobile-overlay .logo a {
+    border: none;
+    font-size: 20px;
+}
+
+.mobile-overlay .close-btn>i {
+    border: 1px solid rgb(0, 184, 15);
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 18px;
+    color: rgb(0, 184, 15);
 }
 
 .mobile-overlay.active {
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
     visibility: visible;
+    height: 100vh;
 }
 
 @media (min-width:990px) {
@@ -17101,8 +17136,7 @@ select.sort {
     left: 0;
     width: 100%;
     height: 65px;
-    background: #f7f7f7d9;
-    backdrop-filter: blur(10px);
+    background: #fff;
     z-index: 999;
     display: flex;
     justify-content: space-around;
@@ -17146,8 +17180,7 @@ select.sort {
 .mobile-navigation .add-button i {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.12);
     bottom: 15px;
-    background: #f7f7f7d9;
-    backdrop-filter: blur(20px);
+    background: #fff;
 }
 
 .mobile-navigation .add-button span {
@@ -17384,11 +17417,6 @@ select.sort {
 }
 
 .select-user :is(.market,
-.user):active {
-    transform: translateY(-20px);
-}
-
-.select-user :is(.market,
 .user) {
     display: flex;
     justify-content: center;
@@ -17400,7 +17428,6 @@ select.sort {
     color: white;
     border: none;
     width: 150px;
-    color: white;
     font-size: 18px;
     font-weight: 500;
     transition: 0.4s ease-out;
@@ -17408,11 +17435,6 @@ select.sort {
 
 :is(.select-location,
 .market-name) {
-    display: none;
-}
-
-.select-location.active,
-.market-name.active {
     display: block;
 }
 
@@ -17433,4 +17455,33 @@ select.sort {
     height: 70px;
     width: 100%;
     background: #163a0f;
+}
+
+.banner-wrapper :is(.market,
+.user) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 184, 15, 0.3);
+    background: rgba(0, 184, 15, 0.05);
+    border-radius: 8px;
+}
+
+.banner-wrapper :is(.market,
+.user) span {
+    width: 120px;
+    font-size: 14px;
+    color: rgb(0, 184, 15);
+}
+
+.banner-wrapper :is(.market,
+.user) i {
+    border-radius: 50%;
+    font-size: 25px;
+    color: rgb(0, 184, 15);
+}
+
+.listing-wrapper {
+    margin-top: 60px;
 }

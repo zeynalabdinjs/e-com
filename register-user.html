@@ -31,7 +31,6 @@
 
                 <div class="card shadow-lg border-0 ms-auto me-auto login-card mt-auto mb-auto zindex-100 rounded-10 theme-dark-bg">
                     <div class="select-user">
-                        <button class="market bg-current" id="market-btn">Mağaza</button>
                         <button class="user bg-current" id="user-btn">İstifadəçi</button>
                     </div>
                     <div class="card-body rounded-0 text-start p-4">
@@ -47,18 +46,6 @@
                                     <i class="font-sm ti-user text-grey-500 pe-0 ms-3"></i>
                                     <input type="text" class="style2-input ps-5 form-control text-grey-900 white-text font-xsss fw-600" placeholder="Soyad" required>
                                 </div>
-                            </div>
-                            <div class="form-group market-name icon-input mb-3">
-                                <i class="font-sm ti-user text-grey-500 pe-0"></i>
-                                <input type="text" class="style2-input ps-5 form-control text-grey-900 white-text font-xsss fw-600" placeholder="Mağaza Adı" required>
-                            </div>
-                            <div class="form-group select-location icon-input mb-3">
-                                <i class="font-sm ti-location-pin text-grey-500 pe-0"></i>
-                                <select class="style2-input ps-5 form-control text-grey-900 white-text font-xsss fw-600" required>
-                                    <option value="Baki">Bakı</option>
-                                    <option value="Shirvan" selected>Şirvan</option>
-                                    <option value="Brooklyn">Brooklyn</option>
-                                </select>
                             </div>
                             <div class="form-group icon-input mb-3">
                                 <i class="font-sm ti-mobile text-grey-500 pe-0"></i>
@@ -106,14 +93,6 @@
     <script src="js/plugin.js"></script>
     <script src="js/scripts.js"></script>
 
-    <script>
-        $(".market").click(function() {
-            $(".select-location, .market-name").addClass("active");
-        })
-        $(".user").click(function() {
-            $(".select-location, .market-name").removeClass("active");
-        })
-    </script>
 
 </body>
 

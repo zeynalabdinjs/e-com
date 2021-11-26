@@ -90,9 +90,15 @@ $(document).ready(function() {
 
 
     $(".category-mobile").on("click", () => {
-        $(".category-mobile").toggleClass("active");
-        $(".mobile-overlay").toggleClass("active");
+        $(".category-mobile").addClass("active");
+        $(".mobile-overlay").addClass("active");
     })
+
+    $(".close-btn").on("click", () => {
+        $(".category-mobile").removeClass("active");
+        $(".mobile-overlay").removeClass("active");
+    })
+
 
     $(".categories li").on("click", () => {
         $(".subcategories").addClass("active");
