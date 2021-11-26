@@ -17388,11 +17388,6 @@ select.sort {
     transition: 0.4s ease-out;
 }
 
-:is(.select-location,
-.market-name) {
-    display: block;
-}
-
 .select-location select {
     padding-bottom: -10px !important;
     display: flex;
@@ -17406,6 +17401,10 @@ select.sort {
     padding-top: 0 !important;
 }
 
+.banner-wrapper .mobile-login button {
+    cursor: default;
+}
+
 .banner-wrapper :is(.market,
 .user) {
     display: flex;
@@ -17415,13 +17414,25 @@ select.sort {
     border: 2px solid rgba(0, 184, 15, 0.3);
     background: rgba(0, 184, 15, 0.05);
     border-radius: 8px;
+    height: 80px;
 }
 
 .banner-wrapper :is(.market,
-.user) span {
+.user)>span {
     width: 120px;
     font-size: 14px;
     color: rgb(0, 184, 15);
+}
+
+.banner-wrapper :is(.market,
+.user)>span>span {
+    font-size: 20px;
+}
+
+.banner-wrapper :is(.market,
+.user) span a {
+    color: rgb(0, 184, 15);
+    font-size: 14px;
 }
 
 .banner-wrapper :is(.market,
@@ -17431,7 +17442,7 @@ select.sort {
     color: rgb(0, 184, 15);
 }
 
-.mobile-login.row {
+.banner-wrapper .mobile-login.row {
     --bs-gutter-x: 5px;
 }
 
