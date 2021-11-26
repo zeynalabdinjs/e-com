@@ -17002,6 +17002,13 @@ select.sort {
     margin-right: 10px;
 }
 
+.categories li img {
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
 .categories li a {
     color: black;
     font-weight: 500;
