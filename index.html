@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <link rel="stylesheet" href="./vendor/boxicons-2.0.9/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="color-theme-green mont-font" style="background-image: url(https://via.placeholder.com/1960x3000.jpg);">
@@ -34,10 +35,12 @@
         </div>
         <!-- MOBILE NAVIGATION -->
         <!-- HEADER WRAPPER -->
-        <div class="header-menu-mob pt-2 pb-2 shadow-xss w-100 z-index-5 bg-white d-none d-block-md" id="header-menu-mob">
+        <div class="header-menu-mob pt-2 pb-2 shadow-xss w-100 z-index-5 bg-white d-none d-block-md"
+            id="header-menu-mob">
             <div class="container">
                 <div class="row">
-                    <div class="col text-start pt-2"><button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#menumodal"><span
+                    <div class="col text-start pt-2"><button class="navbar-toggler border-0" type="button"
+                            data-bs-toggle="modal" data-bs-target="#menumodal"><span
                                 class="navbar-toggler-icon"></span></button></div>
                     <div class="col text-center"><a href="index.html">FARM</a></div>
                     <div class="col text-end"><a class="btn category-mobile"><i class='bx bxs-category'></i></a></div>
@@ -51,7 +54,8 @@
                         <ul class="nav">
                             <li class="nav-item"><a class=" ps-0" href="about.html">About Us</a></li>
                             <li class="nav-item"><a href="dashboard.html">My account</a></li>
-                            <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#savedmodal">Wishlist</a></li>
+                            <li class="nav-item"><a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#savedmodal">Wishlist</a></li>
                             <li class="nav-item"><a href="#">Order Tracking</a></li>
                         </ul>
                     </div>
@@ -70,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-wrapper pt-4 pb-1 z-index-5 ovh bg-white d-none d-lg-block">
+        <div class="header-wrapper pt-4 pb-1 z-index-5 bg-white d-none d-lg-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 d-flex">
@@ -82,9 +86,28 @@
                                 <i class="feather-map-pin text-grey-500"></i>
                                 <h4 class="fw-600 font-xssss mt-0 text-current mb-0 ls-0">Downtown New York..</h4>
                             </a> -->
-                            <div class="form-group mb-0 icon-input d-none d-xl-block me-2">
-                                <i class="feather-search font-sm text-grey-400"></i>
-                                <input type="text" placeholder="Start typing to search.." class="lh-38 pt-2 pb-2 ps-5 pe-3 font-xssss fw-500 rounded-xl posr">
+                            <div class="form-group mb-0 icon-input d-none d-xl-flex align-items-center me-2">
+                                <input type="text" placeholder="Axtaradığınız məhsulu yazın..."
+                                    class="lh-38 pt-2 me-2 pb-2 ps-4 pe-3 font-xssss fw-500 rounded-xl posr"
+                                    id="search-input">
+                                <button
+                                    class="text-center style2-input lh-38 font-xsss text-white fw-500 bg-current border-0 p-0 d-flex align-items-center px-3"
+                                    style="height: 45px!important;">
+                                    <i class="feather-search font-md text-white"
+                                        style="top: 0 !important; top: 0; left: 0;"></i>
+                                </button>
+
+                                <div class="suggestions pt-2" id="suggestions">
+                                    <h2 class="text-current mt-1 mb-3 fw-500 font-xss">Axtarış Nəticələri</h2>
+                                    <button class="btn p-0 m-0 text-grey-600 mt-1 mb-3 fw-500 font-xsss"
+                                        id="clear_suggestions_box">Təmizlə</button>
+                                    <div class="suggestions-box" id="suggestions-box">
+                                        <a href="" class="text-grey-700 fw-500 font-xsss lh-2 ls-0"> Noutbuk </a>
+                                        <a href="" class="mt-2 text-grey-700 fw-500 font-xsss lh-2 ls-0">Ütü Feni</a>
+                                        <a href="" class="mt-2 text-grey-700 fw-500 font-xsss lh-2 ls-0">Samsung Galaxy
+                                            A52 128gb 4gb ram</a>
+                                    </div>
+                                </div>
                             </div>
                             <a href="#" class="nav-icon"><span class="dot-count bg-warning"></span><i
                                     class="feather-bell text-grey-500"></i></a>
@@ -92,7 +115,8 @@
                                     class="feather-heart text-grey-500"></i></a>
                             <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#cartmodal"><i
                                     class="feather-shopping-bag text-grey-500"></i></a>
-                            <a href="dashboard.html" class="nav-icon p-0"><img src="https://via.placeholder.com/50x50.png" alt="user" class="w-40 mt-1"></a>
+                            <a href="dashboard.html" class="nav-icon p-0"><img
+                                    src="https://via.placeholder.com/50x50.png" alt="user" class="w-40 mt-1"></a>
                         </div>
                     </div>
 
@@ -104,8 +128,10 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="navbar navbar-expand-lg p-0">
-                            <div class="navbar-collapse collapse show d-flex justify-content-center align-content-center" id="main_nav">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="true" aria-label="Toggle navigation"><span
+                            <div class="navbar-collapse collapse show d-flex justify-content-center align-content-center"
+                                id="main_nav">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#main_nav" aria-expanded="true" aria-label="Toggle navigation"><span
                                         class="navbar-toggler-icon"></span></button>
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
@@ -164,15 +190,16 @@
                 <div class="row mt-3 mb-3 my-search">
                     <div class="form-group mb-0 icon-input me-2">
                         <i class="feather-search font-sm text-grey-400"></i>
-                        <input type="text" placeholder="Start typing to search.." class="lh-38 ps-5 pe-3 font-xssss fw-500 rounded-xl posr w-100">
+                        <input type="text" placeholder="Start typing to search.."
+                            class="lh-38 ps-5 pe-3 font-xssss fw-500 rounded-xl posr w-100">
                     </div>
                 </div>
                 <div class="row">
                     <div class="my-menu col-lg-3 pe-0 lower-header d-none d-lg-block">
                         <ul class="dropdown-menu show w-100 posr h-100 py-2 shadow-none border rounded-6">
-                            <li class="px-3"><a class="dropdown-item dropdown-toggle" href="#"><i
-                                        class="fas fa-dog"></i>İtlər <span
-                                        class="alert-warning text-warning">NEW</span></a></li>
+                            <li class="px-3"><a class="dropdown-item dropdown-toggle" href="#">
+                                    <img src=".//cute-dog-headshot.jpg" alt="">İtlər
+                                    <span class="alert-warning text-warning">NEW</span></a></li>
                             <li class="px-3"><a class="dropdown-item dropdown-toggle" href="#"><i
                                         class="fas fa-cat"></i>Pişiklər </a></li>
                             <li class="px-3"><a class="dropdown-item dropdown-toggle" href="#"><i
@@ -194,28 +221,231 @@
                                 </a></li>
                         </ul>
                         <div class="overlay border">
-                            <a href="" class="sub-menu-name"></a>
-                            <ul class="sub-menu">
+                            <div class="sub_menu_list" style="grid-row-end: span 2;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Noutbuklar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">HP</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ASUS</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Acer</a></li>
+                                </ul>
+                            </div>
 
-                            </ul>
+
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Planşetlər</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Planşetlər</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Planşetlər</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Planşetlər</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Planşetlər</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Telefonlar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Nokia</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ZTE</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Sony</a></li>
+                                </ul>
+                            </div>
+
+
+                            <div class="sub_menu_list" style="grid-row-end: span 2;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Noutbuklar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">HP</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ASUS</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Acer</a></li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="sub_menu_list" style="grid-row-end: span 2;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Noutbuklar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">HP</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ASUS</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Acer</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="sub_menu_list" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Telefonlar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Nokia</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ZTE</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Sony</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Telefonlar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Nokia</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ZTE</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Sony</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub_menu_list mb-2" style="grid-row-end: span 3;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Telefonlar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Samsung</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Xiaomi</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Huawei</a>
+                                    </li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Nokia</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ZTE</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Sony</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="sub_menu_list" style="grid-row-end: span 2;">
+                                <a href="" class="sub-menu-name font-xsss fw-600 text-current">Noutbuklar</a>
+                                <ul class="sub-menu">
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">HP</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">ASUS</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Apple</a></li>
+                                    <li class="lh-20"><a href="" class="font-xsssss fw-500 text-grey-700">Acer</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="owl-carousel slider-banner banner-wrap owl-theme ovh nav-none owl-arrow-center arrow-container">
-                            <div class="item rounded-6 bg-image-cover ovh style3 d-flex justify-content-start" style="background-image: url(https://via.placeholder.com/738x450.jpg);">
+                        <div
+                            class="owl-carousel slider-banner banner-wrap owl-theme ovh nav-none owl-arrow-center arrow-container">
+                            <div class="item rounded-6 bg-image-cover ovh style3 d-flex justify-content-start"
+                                style="background-image: url(https://via.placeholder.com/738x450.jpg);">
                                 <div class="slide-content text-left w-75">
                                     <span class="text-grey-700">All natural products</span>
                                     <h2 class="text-grey-900"><b>Healty Food Pure</b> Orgomart Market</h2>
-                                    <p class="text-grey-600">Orgomart food is food produced by methods that comply with the standard of farming.</p>
+                                    <p class="text-grey-600">Orgomart food is food produced by methods that comply with
+                                        the standard of farming.</p>
                                     <div class="clearfix"></div>
                                     <a href="#" class="btn-lg rounded-25 btn bg-current">SHOP NOW</a>
                                 </div>
                             </div>
-                            <div class="item rounded-6 bg-image-cover ovh style3 d-flex justify-content-start" style="background-image: url(https://via.placeholder.com/738x450.jpg);">
+                            <div class="item rounded-6 bg-image-cover ovh style3 d-flex justify-content-start"
+                                style="background-image: url(https://via.placeholder.com/738x450.jpg);">
                                 <div class="slide-content text-left w-75">
                                     <span class="text-grey-700">All natural products</span>
                                     <h2 class="text-grey-900"><b class="d-block">Special offer </b>of the week</h2>
-                                    <p class="text-grey-600">Orgomart food is food produced by methods that comply with the standard of farming.</p>
+                                    <p class="text-grey-600">Orgomart food is food produced by methods that comply with
+                                        the standard of farming.</p>
                                     <div class="clearfix"></div>
                                     <a href="#" class="btn-lg rounded-25 btn bg-current">SHOP NOW</a>
                                 </div>
@@ -228,11 +458,13 @@
                         <div class="card w-100 border-0 shadow-none mb-0 ovh rounded-6 hover-zoom-image">
                             <img src="https://via.placeholder.com/260x397.jpg" alt="" class="w-100">
                             <div class="p-4 posa top-0 w-100">
-                                <span class="fw-700 ls-3 text-white bg-current ps-2 pe-2 lh-24 rounded-6 d-inline-block font-xsssss">30%
+                                <span
+                                    class="fw-700 ls-3 text-white bg-current ps-2 pe-2 lh-24 rounded-6 d-inline-block font-xsssss">30%
                                     OFF</span>
                                 <h4 class="font-md fw-700 lh-28 text-grey-900 mb-1 mt-3 ls-0">High Quality <br> Products
                                 </h4>
-                                <a href="#" class="fw-700 ls-1 border-bottom border-dark lh-20 d-inline-block text-grey-900 font-xsssss">SHOP
+                                <a href="#"
+                                    class="fw-700 ls-1 border-bottom border-dark lh-20 d-inline-block text-grey-900 font-xsssss">SHOP
                                     NOW</a>
                             </div>
                         </div>
@@ -240,7 +472,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 pe-2">
-                        <div class="card d-flex align-items-end flex-column border-0 h-200 w-100 rounded-6 mt-3 bg-image-cover p-4" style="background-image: url(https://via.placeholder.com/400x250.jpg);">
+                        <div class="card d-flex align-items-end flex-column border-0 h-200 w-100 rounded-6 mt-3 bg-image-cover p-4"
+                            style="background-image: url(https://via.placeholder.com/400x250.jpg);">
                             <div class="p-0 pe-3 mt-auto w-100">
                                 <span class="fw-700 ls-3 text-current font-xsssss">30% OFF</span>
                                 <h4 class="font-sm fw-700 lh-2 text-grey-900 mb-3">Fresh <br> vegitable</h4>
@@ -249,7 +482,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 pe-2 ps-2">
-                        <div class="card d-flex align-items-end flex-column border-0 h-200 w-100 rounded-6 mt-3 bg-image-cover p-4" style="background-image: url(https://via.placeholder.com/400x250.jpg);">
+                        <div class="card d-flex align-items-end flex-column border-0 h-200 w-100 rounded-6 mt-3 bg-image-cover p-4"
+                            style="background-image: url(https://via.placeholder.com/400x250.jpg);">
                             <div class="p-0 pe-3 mt-auto w-100">
                                 <span class="fw-700 ls-3 text-current font-xsssss">30% OFF</span>
                                 <h4 class="font-sm fw-700 lh-2 text-grey-900 mb-3">Healty <br> vegitable</h4>
@@ -259,7 +493,8 @@
                     </div>
 
                     <div class="col-lg-4 col-md-4 ps-2">
-                        <div class="card d-flex align-items-end flex-column border-0 h-200 w-100 rounded-6 mt-3 bg-image-cover p-4" style="background-image: url(https://via.placeholder.com/400x250.jpg);">
+                        <div class="card d-flex align-items-end flex-column border-0 h-200 w-100 rounded-6 mt-3 bg-image-cover p-4"
+                            style="background-image: url(https://via.placeholder.com/400x250.jpg);">
                             <div class="p-0 pe-3 mt-auto w-100">
                                 <span class="fw-700 ls-3 text-current font-xsssss">30% OFF</span>
                                 <h4 class="font-sm fw-700 lh-2 text-grey-900 mb-3">Bread <br> 50% OFF</h4>
@@ -315,15 +550,21 @@
                         <h4 class="fw-700 font-xs mb-4 mt-2">Deal of the day</h4>
                     </div>
                     <div class="col-lg-12">
-                        <div class="banner-slider-5 owl-carousel owl-theme dot-none owl-nav-link owl-arrow-top rounded-6 bg-white border-danger">
+                        <div
+                            class="banner-slider-5 owl-carousel owl-theme dot-none owl-nav-link owl-arrow-top rounded-6 bg-white border-danger">
                             <div class="owl-items">
                                 <div class="col-lg-12 p-3 rounded-0 posr">
-                                    <h4 class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
+                                    <h4
+                                        class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
                                         30% off</h4>
-                                    <a href="#" class="posa right-0 top-0 mt-3 me-3"><i
-                                            class="ti-heart font-xs text-grey-500"></i></a>
+                                    <span class="wish-list">
+                                        <i class='colorSuccess bx bx-heart'></i>
+                                    </span>
                                     <div class="clearfix"></div>
-                                    <a href="#" class="d-block text-center p-2" data-bs-toggle="modal" data-bs-target="#productmodal"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-1 d-inline-block"></a>
+                                    <a href="#" class="d-block text-center p-2" data-bs-toggle="modal"
+                                        data-bs-target="#productmodal"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 mt-1 d-inline-block"></a>
                                     <div class="star d-inline text-left">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -332,9 +573,12 @@
                                         <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                     </div>
                                     <div class="clearfix"></div>
-                                    <h2 class="mt-1"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Apis Mixed Fruit Jam </a>
+                                    <h2 class="mt-1"><a href="single-product.html"
+                                            class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Apis Mixed Fruit Jam </a>
                                     </h2>
-                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>49 <span class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
+                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                            class="font-xsssss text-grey-500">$</span>49 <span
+                                            class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
                                     <div class="cart-count d-flex mt-4 mb-2">
                                         <div class="number">
                                             <span class="minus">-</span>
@@ -347,12 +591,17 @@
 
                             <div class="owl-items">
                                 <div class="col-lg-12 p-3 rounded-0 posr">
-                                    <h4 class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
-                                        Deal</h4>
-                                    <a href="#" class="posa right-0 top-0 mt-3 me-3"><i
-                                            class="ti-heart font-xs text-grey-500"></i></a>
+                                    <h4
+                                        class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
+                                        30% off</h4>
+                                    <span class="wish-list">
+                                        <i class='colorSuccess bx bx-heart'></i>
+                                    </span>
                                     <div class="clearfix"></div>
-                                    <a href="#" class="d-block text-center p-2"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-1 d-inline-block"></a>
+                                    <a href="#" class="d-block text-center p-2" data-bs-toggle="modal"
+                                        data-bs-target="#productmodal"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 mt-1 d-inline-block"></a>
                                     <div class="star d-inline text-left">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -361,8 +610,12 @@
                                         <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                     </div>
                                     <div class="clearfix"></div>
-                                    <h2 class="mt-1"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Masoor Dal (Split)</a></h2>
-                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 font-xsssss">6kg</span></h6>
+                                    <h2 class="mt-1"><a href="single-product.html"
+                                            class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Apis Mixed Fruit Jam </a>
+                                    </h2>
+                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                            class="font-xsssss text-grey-500">$</span>49 <span
+                                            class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
                                     <div class="cart-count d-flex mt-4 mb-2">
                                         <div class="number">
                                             <span class="minus">-</span>
@@ -375,22 +628,68 @@
 
                             <div class="owl-items">
                                 <div class="col-lg-12 p-3 rounded-0 posr">
-                                    <h4 class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
-                                        Sale</h4>
-                                    <a href="#" class="posa right-0 top-0 mt-3 me-3"><i
-                                            class="ti-heart font-xs text-grey-500"></i></a>
+                                    <h4
+                                        class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
+                                        30% off</h4>
+                                    <span class="wish-list">
+                                        <i class='colorSuccess bx bx-heart'></i>
+                                    </span>
                                     <div class="clearfix"></div>
-                                    <a href="#" class="d-block text-center p-2"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-1 d-inline-block"></a>
+                                    <a href="#" class="d-block text-center p-2" data-bs-toggle="modal"
+                                        data-bs-target="#productmodal"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 mt-1 d-inline-block"></a>
                                     <div class="star d-inline text-left">
+                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <h2 class="mt-1"><a href="single-product.html"
+                                            class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Apis Mixed Fruit Jam </a>
+                                    </h2>
+                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                            class="font-xsssss text-grey-500">$</span>49 <span
+                                            class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
+                                    <div class="cart-count d-flex mt-4 mb-2">
+                                        <div class="number">
+                                            <span class="minus">-</span>
+                                            <input type="text" class="open-font" value="1">
+                                            <span class="plus">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="owl-items">
+                                <div class="col-lg-12 p-3 rounded-0 posr">
+                                    <h4
+                                        class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
+                                        30% off</h4>
+                                    <span class="wish-list">
+                                        <i class='colorSuccess bx bx-heart'></i>
+                                    </span>
+                                    <div class="clearfix"></div>
+                                    <a href="#" class="d-block text-center p-2" data-bs-toggle="modal"
+                                        data-bs-target="#productmodal"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 mt-1 d-inline-block"></a>
+                                    <div class="star d-inline text-left">
+                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
+                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
+                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
+                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                         <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                     </div>
                                     <div class="clearfix"></div>
-                                    <h2 class="mt-1"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Tata Iodized Salt</a></h2>
-                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>43 <span class="ms-auto text-grey-500 fw-500 font-xsssss">50gm</span></h6>
+                                    <h2 class="mt-1"><a href="single-product.html"
+                                            class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Apis Mixed Fruit Jam </a>
+                                    </h2>
+                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                            class="font-xsssss text-grey-500">$</span>49 <span
+                                            class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
                                     <div class="cart-count d-flex mt-4 mb-2">
                                         <div class="number">
                                             <span class="minus">-</span>
@@ -401,96 +700,12 @@
                                 </div>
                             </div>
 
-                            <div class="owl-items">
-                                <div class="col-lg-12 p-3 rounded-0 posr">
-                                    <h4 class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
-                                        Sale</h4>
-                                    <a href="#" class="posa right-0 top-0 mt-3 me-3"><i
-                                            class="ti-heart font-xs text-grey-500"></i></a>
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="d-block text-center p-2"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-1 d-inline-block"></a>
-                                    <div class="star d-inline text-left">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <h2 class="mt-1"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Dabur Lal Dant Manjan</a>
-                                    </h2>
-                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>56 <span class="ms-auto text-grey-500 fw-500 font-xsssss">100gm</span></h6>
-                                    <div class="cart-count d-flex mt-4 mb-2">
-                                        <div class="number">
-                                            <span class="minus">-</span>
-                                            <input type="text" class="open-font" value="1">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="owl-items">
-                                <div class="col-lg-12 p-3 rounded-0 posr">
-                                    <h4 class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
-                                        Sale</h4>
-                                    <a href="#" class="posa right-0 top-0 mt-3 me-3"><i
-                                            class="ti-heart font-xs text-grey-500"></i></a>
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="d-block text-center p-2"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-1 d-inline-block"></a>
-                                    <div class="star d-inline text-left">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <h2 class="mt-1"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Yeppe Noddles Masala</a>
-                                    </h2>
-                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>22 <span class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
-                                    <div class="cart-count d-flex mt-4 mb-2">
-                                        <div class="number">
-                                            <span class="minus">-</span>
-                                            <input type="text" class="open-font" value="1">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="owl-items">
-                                <div class="col-lg-12 p-3 rounded-0 posr">
-                                    <h4 class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block posa rounded-3">
-                                        Sale</h4>
-                                    <a href="#" class="posa right-0 top-0 mt-3 me-3"><i
-                                            class="ti-heart font-xs text-grey-500"></i></a>
-                                    <div class="clearfix"></div>
-                                    <a href="#" class="d-block text-center p-2"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-1 d-inline-block"></a>
-                                    <div class="star d-inline text-left">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                        <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <h2 class="mt-1"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-2 ls-0">Yeppe Noddles Masala</a>
-                                    </h2>
-                                    <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>67 <span class="ms-auto text-grey-500 fw-500 font-xsssss">500gm</span></h6>
-                                    <div class="cart-count d-flex mt-4 mb-2">
-                                        <div class="number">
-                                            <span class="minus">-</span>
-                                            <input type="text" class="open-font" value="1">
-                                            <span class="plus">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-12 mt-4">
-                        <div class="card border-0 banner-wrap bg-image-cover bg-image-center" style="background-image: url(https://via.placeholder.com/795x220.png);">
+                        <div class="card border-0 banner-wrap bg-image-cover bg-image-center"
+                            style="background-image: url(https://via.placeholder.com/795x220.png);">
                             <div class="slide-content style4 text-center w-100">
                                 <span class="text-current">All natural products</span>
                                 <h2 class="text-grey-900"><b class="d-block">SUMMER DISCOUNT </b>of the week</h2>
@@ -508,7 +723,9 @@
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -517,9 +734,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
                                                 Almonds Lightly Salted</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -532,7 +752,9 @@
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -541,9 +763,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
                                                 Almonds Lightly Salted</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -555,11 +780,14 @@
                                 </div>
                                 <div class="col col-xs-6 border-end p-0">
                                     <div class="p-3 rounded-0 posr border-bottom">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-danger fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">DEAL</span>
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-danger fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">DEAL</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -568,9 +796,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Assorted
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Assorted
                                                 Donuts Each Salted</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -580,12 +811,15 @@
                                         </div>
                                     </div>
                                     <div class="p-3 rounded-0 posr">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">30%
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">30%
                                             off</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-4"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -594,9 +828,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Natures Own
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Natures Own
                                                 100% Wheat</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -608,11 +845,14 @@
                                 </div>
                                 <div class="col-3 border-end p-0 d-none d-lg-block">
                                     <div class="p-4 p-xl-5 rounded-0 posr">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-warning fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">Trend</span>
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-warning fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">Trend</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-5 mb-5 d-inline-block p-4"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-5 mb-5 d-inline-block p-4"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -621,25 +861,33 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-3 mb-4"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
+                                        <h2 class="mt-3 mb-4"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
                                                 Almonds Lightly Salted</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="clearfix mt-5"></div>
-                                        <a href="#" class="btn-lg mt-5 rounded-25 btn bg-current text-uppercase  text-white font-xsssss fw-700 ls-3 p-3 w-100 d-block">Add
+                                        <a href="#"
+                                            class="btn-lg mt-5 rounded-25 btn bg-current text-uppercase  text-white font-xsssss fw-700 ls-3 p-3 w-100 d-block">Add
                                             to Cart</a>
-                                        <a href="#" class="btn-lg mt-2 rounded-25 btn border-success text-uppercase text-success font-xsssss fw-700 ls-3 p-3 w-100 d-block">Add
+                                        <a href="#"
+                                            class="btn-lg mt-2 rounded-25 btn border-success text-uppercase text-success font-xsssss fw-700 ls-3 p-3 w-100 d-block">Add
                                             to wishlist</a>
 
                                     </div>
                                 </div>
                                 <div class="col col-xs-6 border-end p-0">
                                     <div class="p-3 rounded-0 posr border-bottom">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">30%
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">30%
                                             off</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -648,9 +896,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Blue Diamond
                                                 Almonds Lightly Salted</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -660,11 +911,14 @@
                                         </div>
                                     </div>
                                     <div class="p-3 rounded-0 posr">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-warning fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">TREND</span>
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-warning fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">TREND</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -673,9 +927,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Assorted
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Assorted
                                                 Donuts Each Salted</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -687,11 +944,14 @@
                                 </div>
                                 <div class="col col-xs-6 p-0">
                                     <div class="p-3 rounded-0 posr border-bottom">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-success fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">NEW</span>
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-success fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">NEW</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-4"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-2 pt-0"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -700,9 +960,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Natures Own
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Natures Own
                                                 100% Wheat</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -712,12 +975,15 @@
                                         </div>
                                     </div>
                                     <div class="p-3 rounded-0 posr">
-                                        <span class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">22%
+                                        <span
+                                            class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 lh-1 d-inline-block posa rounded-3 left-15 top-15">22%
                                             off</span>
                                         <a href="#" class="wishlist-btn posa right-0 top-0 mt-3 me-3"><i
                                                 class="feather-heart font-md text-grey-500"></i></a>
                                         <div class="clearfix"></div>
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 mt-3 mb-3 d-inline-block p-4 pt-1 pb-3"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 mt-3 mb-3 d-inline-block p-4 pt-1 pb-3"></a>
                                         <div class="star d-inline text-left">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
                                             <img src="images/star.png" alt="star" class="w-10 me-1 float-start">
@@ -726,9 +992,12 @@
                                             <img src="images/star-disable.png" alt="star" class="w-10 me-1 float-start">
                                         </div>
                                         <div class="clearfix"></div>
-                                        <h2 class="mt-2"><a href="single-product.html" class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Tailgater Ham
+                                        <h2 class="mt-2"><a href="single-product.html"
+                                                class="text-grey-700 fw-600 font-xsss lh-22 d-block ls-0">Tailgater Ham
                                                 Sandwich Orgomart</a></h2>
-                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span class="font-xsssss text-grey-500">$</span>29 <span class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
+                                        <h6 class="font-xss ls-3 fw-700 text-current d-flex"><span
+                                                class="font-xsssss text-grey-500">$</span>29 <span
+                                                class="ms-auto text-grey-500 fw-500 mt-1 font-xsssss">500gm</span></h6>
                                         <div class="cart-count d-flex mt-4">
                                             <div class="number">
                                                 <span class="minus">-</span>
@@ -748,52 +1017,72 @@
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Blue Diamond
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Blue Diamond
                                             Almonds Lightly Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Assorted
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Assorted
                                             Donuts Each Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Natures Own
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Natures Own
                                             Wheat Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Kobita
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Kobita
                                             Almonds Lightly Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
@@ -805,52 +1094,72 @@
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Almonds
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Almonds
                                             Sweet & Salty Kettle Corn</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Blue Diamond
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Blue Diamond
                                             Almonds Lightly Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Assorted
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Assorted
                                             Donuts Each Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Natures Own
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Natures Own
                                             Wheat Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
@@ -862,52 +1171,72 @@
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Kobita
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Kobita
                                             Almonds Lightly Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Almonds
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Almonds
                                             Sweet & Salty Kettle Corn</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Almonds
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Almonds
                                             Sweet & Salty Kettle Corn</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-content p-3 border-bottom border-light border-size-md">
                                 <div class="row">
                                     <div class="col-sm-4 col-xs-4">
-                                        <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-2 rounded-6"></a>
+                                        <a href="#" class="d-block text-center"><img
+                                                src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                                class="w-100 d-inline-block pt-2 rounded-6"></a>
                                     </div>
                                     <div class="col-sm-8 col-xs-8 ps-0">
-                                        <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                        <a href="single-product.html" class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Assorted
+                                        <span
+                                            class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                        <a href="single-product.html"
+                                            class="text-grey-900 fw-600 font-xssss lh-20 d-block ls-0 mb-0">Assorted
                                             Donuts Each Salted</a>
-                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                        <h6 class="font-xsss ls-3 fw-700 text-current float-start mt-1"><span
+                                                class="font-xsssss text-grey-500">$</span>29 </h6>
                                     </div>
                                 </div>
                             </div>
@@ -919,149 +1248,10 @@
             </div>
         </div>
 
-        <!-- CATEGORY WRAPPER -->
-        <div class="content-wrap">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 pt-3 pb-3">
-                        <h4 class="fw-700 font-sm mb-4 mt-2 ">Shop by Categories</h4>
-                        <div class="owl-carousel owl-theme category-slider owl-dot-nav owl-arrow-top overflow-visible">
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Oils, Refined & <br> Ghee
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Chocolates & Sweets
-                                        <br> Nuts
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Dry Fruits, <br>Nuts & Seeds</h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Wellness & Common
-                                        <br>Pharma
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Instant Drink
-                                        <br>Mixes
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Chips Namkeen & <br> Snacks
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Cooking Sauces <br> Vinegar
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="item me-2">
-                                <div class="category-card style-three shadow-none text-center bg-transparent border-0">
-                                    <a href="#" class="rounded-circle hover-zoom pt-1 image-round after-none"><img src="https://via.placeholder.com/85x85.jpg" class="w-85 rounded-circle" alt="icon"></a>
-                                    <h4 class="font-xssss text-grey-600 mt-2 fw-700 d-block lh-18">Packaged Food & <br> Fruits
-                                    </h4>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CATEGORY WRAPPER -->
 
 
 
-        <!-- BLOG WRAPPER -->
-        <div class="blog-wrapper pt-2 pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="fw-700 font-sm mb-4 mt-2 text-uppercase d-flex lh-18">Our Blog <a href="#" class="ms-auto text-grey-500 fw-600 text-uppercase font-xsssss border-bottom ls-3">view
-                                all</a></h4>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <article class="blog-div sm-mb-3">
-                            <div class="card border-0 bg-transparent">
-                                <div class="card-image mb-2 rounded-6 ovh">
-                                    <a href="blog-single.html"><img src="https://via.placeholder.com/310x200.png" alt="blog" class="w-100 hover-zoom"></a>
-                                </div>
-                                <div class="card-content">
-                                    <span class="ls-3 mb-1 font-xssssss text-white text-uppercase bg-green fw-700 p-2 lh-1 d-inline-block rounded-10">LIFESTYLE</span>
-                                    <h2><a href="blog-single.html" class="post-title fw-600 font-xss text-grey-900 lh-24">Broad beans, tomato,
-                                            garlic &amp; mozzarella cheese bruschetta</a></h2>
 
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-3"><i class="feather-user font-xss me-1"></i>By Admin</h4>
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-3"><i class="feather-message-circle font-xs me-1"></i>34 Comments</h4>
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-0"><i class="feather-calendar font-xss me-1"></i>16 March 2020</h4>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <article class="blog-div sm-mb-3">
-                            <div class="card border-0 bg-transparent">
-                                <div class="card-image mb-2 rounded-6 ovh">
-                                    <a href="blog-single.html"><img src="https://via.placeholder.com/310x200.png" alt="blog" class="w-100 hover-zoom"></a>
-                                </div>
-                                <div class="card-content">
-                                    <span class="ls-3 mb-1 font-xssssss text-white text-uppercase bg-green fw-700 p-2 lh-1 d-inline-block rounded-10">FOOD</span>
-                                    <h2><a href="blog-single.html" class="post-title fw-600 font-xss text-grey-900 lh-24">Steak salad with goat
-                                            cheese and arugula for your family?</a></h2>
-
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-3"><i class="feather-user font-xss me-1"></i>By Admin</h4>
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-3"><i class="feather-message-circle font-xs me-1"></i>12 Comments</h4>
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-0"><i class="feather-calendar font-xss me-1"></i>23 Feb 2020</h4>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <article class="blog-div">
-                            <div class="card border-0 bg-transparent">
-                                <div class="card-image mb-2 rounded-6 ovh">
-                                    <a href="blog-single.html"><img src="https://via.placeholder.com/310x200.png" alt="blog" class="w-100 hover-zoom"></a>
-                                </div>
-                                <div class="card-content">
-                                    <span class="ls-3 mb-1 font-xssssss text-white text-uppercase bg-green fw-700 p-2 lh-1 d-inline-block rounded-10">Freshveg</span>
-                                    <h2><a href="blog-single.html" class="post-title fw-600 font-xss text-grey-900 lh-24">Egg salad sandwich
-                                            with avocado and watercress chip pancakes</a></h2>
-
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-3"><i class="feather-user font-xss me-1"></i>By Admin</h4>
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-3"><i class="feather-message-circle font-xs me-1"></i>54 Comments</h4>
-                                    <h4 class="text-grey-500 float-start d-flex fw-600 lh-20 font-xsssss mt-1 me-0"><i class="feather-calendar font-xss me-1"></i>22 Aug 2020</h4>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- BLOG WRAPPER -->
 
 
         <!-- FOOTER WRAPPER -->
@@ -1165,8 +1355,10 @@
                         <a href="#"><img src="images/logo.png" alt="logo" class="w-125"></a>
                     </div>
                     <div class="col-md-8 text-center text-sm-end xs-mb-3">
-                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
-                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img
+                                src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img
+                                src="https://via.placeholder.com/116x38.png" alt="play"></a>
                         <a href="#" class="btn-round btn-round-md z-index-1 bg-facebook"><i
                                 class="ti-facebook text-white"></i></a>
                         <a href="#" class="btn-round btn-round-md z-index-1 bg-twiiter"><i
@@ -1192,7 +1384,8 @@
                     <div class="col-md-6 text-center text-sm-start xs-mb-3">
                         <p class="text-grey-500 fw-500 font-xssss mb-0">@ Copyright 2021 All rights reserved.</p>
                     </div>
-                    <div class="col-md-6 text-center text-sm-end"><img src="https://via.placeholder.com/320x28.png" alt="payment"></div>
+                    <div class="col-md-6 text-center text-sm-end"><img src="https://via.placeholder.com/320x28.png"
+                            alt="payment"></div>
                 </div>
             </div>
         </div>
@@ -1207,7 +1400,9 @@
     <div class="modal fade left modal-scrollable" id="menumodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
-                <button type="button" class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-4 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button"
+                    class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-4 me-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body vw100 text-start p-0 h-100">
                     <div class="card p-4 border-0 text-start h-100 ">
                         <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 d-block ls-0"> Menu</h4>
@@ -1232,11 +1427,15 @@
                                 <a class="nav-link" href="">Pages</a>
                             </li>
                         </ul>
-                        <div class="card h-auto mt-auto p-4 w-100 rounded-10 theme-bg border-0 text-center bg-image-cover" style="background-image: url(https://via.placeholder.com/1071x319.png);">
+                        <div class="card h-auto mt-auto p-4 w-100 rounded-10 theme-bg border-0 text-center bg-image-cover"
+                            style="background-image: url(https://via.placeholder.com/1071x319.png);">
                             <div class="card-body text-center p-2 mb-2">
-                                <h4 class="text-grey-900 white-text mb-3 font-xs fw-500">Hesabında<b class="text-grey-900 white-text"> Deyilsən ?</b></h4>
-                                <a href="login-one.html" class="btn rounded-25 bg-current white-text text-white w-150">Daxil Ol</a>
-                                <a href="register-one.html" class="btn rounded-25 bg-current white-text text-white w-200 mt-1">Qeydiyyatdan
+                                <h4 class="text-grey-900 white-text mb-3 font-xs fw-500">Hesabında<b
+                                        class="text-grey-900 white-text"> Deyilsən ?</b></h4>
+                                <a href="login-one.html"
+                                    class="btn rounded-25 bg-current white-text text-white w-150">Daxil Ol</a>
+                                <a href="register-one.html"
+                                    class="btn rounded-25 bg-current white-text text-white w-200 mt-1">Qeydiyyatdan
                                     Keç</a>
                             </div>
                         </div>
@@ -1257,73 +1456,106 @@
     <div class="modal fade right modal-scrollable" id="savedmodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
             <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
-                <button type="button" class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button"
+                    class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-3 me-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="cart-box vh-100">
                     <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column">
                         <div class="card w-100 p-4 pb-0 border-0 text-start">
                             <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 mt-n2 d-block"> Saved</h4>
                             <div class="row mb-3">
                                 <div class="col-md-5 col-xs-5">
-                                    <a href="#" class="d-block text-center" data-bs-toggle="modal" data-bs-target="#productmodal"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                    <a href="#" class="d-block text-center" data-bs-toggle="modal"
+                                        data-bs-target="#productmodal"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
                                 </div>
                                 <div class="col-md-7 col-xs-7 ps-0">
-                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                    <a href="single-product-1.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
                                         Almonds Lightly Salted</a>
-                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>29 </h6>
-                                    <a href="#" class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>29 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
                                         to cart</a>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-5 col-xs-5">
-                                    <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
                                 </div>
                                 <div class="col-md-7 col-xs-7 ps-0">
-                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
-                                    <a href="single-product-1.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
                                         Almonds Lightly Salted</a>
-                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>49 </h6>
-                                    <a href="#" class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>49 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
                                         to cart</a>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-5 col-xs-5">
-                                    <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
                                 </div>
                                 <div class="col-md-7 col-xs-7 ps-0">
-                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">100gm</span>
-                                    <a href="single-product-1.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">100gm</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
                                         Almonds Lightly Salted</a>
-                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>99 </h6>
-                                    <a href="#" class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>99 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
                                         to cart</a>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-5 col-xs-5">
-                                    <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
                                 </div>
                                 <div class="col-md-7 col-xs-7 ps-0">
-                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
-                                    <a href="single-product-1.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
                                         Almonds Lightly Salted</a>
-                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>39 </h6>
-                                    <a href="#" class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>39 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
                                         to cart</a>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-5 col-xs-5">
-                                    <a href="#" class="d-block text-center"><img src="https://via.placeholder.com/171x148.png" alt="product-image" class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
                                 </div>
                                 <div class="col-md-7 col-xs-7 ps-0">
-                                    <span class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
-                                    <a href="single-product-1.html" class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
                                         Almonds Lightly Salted</a>
-                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span class="font-xsssss text-grey-500">$</span>39 </h6>
-                                    <a href="#" class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>39 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
                                         to cart</a>
                                 </div>
                             </div>
@@ -1390,6 +1622,21 @@
                     <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor sit
                             amet consectetur.</span> </div>
                 </li>
+
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor sit
+                            amet consectetur.</span> </div>
+                </li>
+
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor sit
+                            amet consectetur.</span> </div>
+                </li>
+
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor sit
+                            amet consectetur.</span> </div>
+                </li>
             </ul>
 
 
@@ -1398,7 +1645,7 @@
                     <div class="back"><i class='bx bx-left-arrow-alt'></i></div>
                     <div class="parent-name">Parent Name</div>
                 </div>
-                <ul class="categories posr h-100 mt-3">
+                <ul class="subcategories-name posr mt-3">
                     <li><a class="" href="#">Pişiklər</a></li>
                     <li><a class="" href="#">İtlər</a></li>
                     <li><a class="" href="#">Balıqlar</a></li>
@@ -1423,15 +1670,23 @@
     <div class="modal fade right modal-scrollable" id="productmodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
             <div class="modal-content theme-dark-bg border-0 rounded-0">
-                <button type="button" class="btn-close z-index-5 font-xsss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-0 me-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button"
+                    class="btn-close z-index-5 font-xsss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-0 me-0"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="cart-box vh-100">
                     <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column p-4">
                         <div class="card border-0 w-100 text-center d-inline-block mb-3">
-                            <span class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block rounded-3 posa left-15 top-15 z-index-5">30%
+                            <span
+                                class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block rounded-3 posa left-15 top-15 z-index-5">30%
                                 off</span>
-                            <div class="owl-carousel product-banner owl-theme overflow-hidden nav-none owl-dots-none owl-arrow-center">
-                                <div class="item me-0 bg-greylight text-center"><img src="https://via.placeholder.com/200x400.png" alt="product-image" class="shadow-none w-150 d-inline-block rounded-6 p-4"></div>
-                                <div class="item me-0 bg-greylight text-center"><img src="https://via.placeholder.com/200x400.png" alt="product-image" class="shadow-none w-150 d-inline-block rounded-6 p-4"></div>
+                            <div
+                                class="owl-carousel product-banner owl-theme overflow-hidden nav-none owl-dots-none owl-arrow-center">
+                                <div class="item me-0 bg-greylight text-center"><img
+                                        src="https://via.placeholder.com/200x400.png" alt="product-image"
+                                        class="shadow-none w-150 d-inline-block rounded-6 p-4"></div>
+                                <div class="item me-0 bg-greylight text-center"><img
+                                        src="https://via.placeholder.com/200x400.png" alt="product-image"
+                                        class="shadow-none w-150 d-inline-block rounded-6 p-4"></div>
                             </div>
                         </div>
                         <div class="card border-0 w-100 mt-2">
@@ -1442,23 +1697,35 @@
                                 <img src="images/star.png" alt="star" class="w-12 me-1 float-start">
                                 <img src="images/star-disable.png" alt="star" class="w-12 me-2 float-start">
                             </div>
-                            <h2 class="fw-700 text-grey-700 font-xss ls-0 lh-26 mt-2 mb-0 pe-lg-5">Blue Diamond Almonds Rice Orgomart Salted</h2>
+                            <h2 class="fw-700 text-grey-700 font-xss ls-0 lh-26 mt-2 mb-0 pe-lg-5">Blue Diamond Almonds
+                                Rice Orgomart Salted</h2>
                             <div class="cart-count cart-count-lg float-end mt-2">
-                                <h6 class="font-sm ls-3 fw-700 text-current float-start mt-1 me-4"><span class="font-xsssss text-grey-500">$</span>29 </h6>
+                                <h6 class="font-sm ls-3 fw-700 text-current float-start mt-1 me-4"><span
+                                        class="font-xsssss text-grey-500">$</span>29 </h6>
                                 <div class="number">
                                     <span class="minus">-</span>
                                     <input type="text" class="open-font" value="1">
                                     <span class="plus">+</span>
                                 </div>
                             </div>
-                            <p class="font-xssss fw-500 mt-3 text-grey-500">Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent
+                            <p class="font-xssss fw-500 mt-3 text-grey-500">Vivamus adipiscing nisl ut dolor dignissim
+                                semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora
+                                torquent
                             </p>
-                            <h5 class="font-xssss fw-500 text-grey-500 mt-1"><b class="text-grey-700">Category:</b> Meats & Seafood </h5>
-                            <h5 class="font-xssss fw-500 text-grey-500 mt-1"><b class="text-grey-700">Tags:</b> chicken, natural, Orgomart</h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-1"><b class="text-grey-700">Category:</b>
+                                Meats & Seafood </h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-1"><b class="text-grey-700">Tags:</b> chicken,
+                                natural, Orgomart</h5>
 
-                            <h5 class="font-xssss fw-500 text-grey-500 mt-3 d-flex"><i class="feather-bookmark font-xs text-current me-2 mt-n1"></i> <b class="text-grey-700 me-1">2 Month</b> Brand Warranty </h5>
-                            <h5 class="font-xssss fw-500 text-grey-500 mt-2 d-flex"><i class="feather-help-circle font-xs text-current me-2 mt-n1"></i> <b class="text-grey-700 me-1">100% </b> Orgomart Product</h5>
-                            <h5 class="font-xssss fw-500 text-grey-500 mt-2 d-flex mb-4"><i class="feather-alert-triangle font-xs text-current me-2 mt-n1"></i> <b class="text-grey-700 me-1">30 Days </b> Money back Return</h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-3 d-flex"><i
+                                    class="feather-bookmark font-xs text-current me-2 mt-n1"></i> <b
+                                    class="text-grey-700 me-1">2 Month</b> Brand Warranty </h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-2 d-flex"><i
+                                    class="feather-help-circle font-xs text-current me-2 mt-n1"></i> <b
+                                    class="text-grey-700 me-1">100% </b> Orgomart Product</h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-2 d-flex mb-4"><i
+                                    class="feather-alert-triangle font-xs text-current me-2 mt-n1"></i> <b
+                                    class="text-grey-700 me-1">30 Days </b> Money back Return</h5>
 
                             <div class="alert-warning text-danger p-2 text-center w-100 font-xsssss fw-500 rounded-6">
                                 Covid-19 Info: We keep delivering.</div>

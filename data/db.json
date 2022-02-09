@@ -1,7 +1,7 @@
 [{
         "id": 0,
         "name": "İtlər",
-        "background": "#fff url(../images/dogs.png) no-repeat",
+        "background": "#fff",
         "Children": [{
                 "id": "0",
                 "name": "İt Oyuncaq"
@@ -23,7 +23,7 @@
     {
         "id": 1,
         "name": "Pişiklər",
-        "background": "#fff url(../images/cats.png) no-repeat",
+        "background": "#fff",
         "Children": [{
                 "id": "0",
                 "name": "Pişik Oyuncaq"

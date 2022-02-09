@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orgomart - Grocery Store HTML Template</title>
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="color-theme-green mont-font" style="background-image: url(https://via.placeholder.com/1960x3000.jpg);">
+
+    <!-- main wrapper  -->
+    <div class="main-wrapper home center-wrap overflow-hidden w-100">
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="mobile-navigation">
+            <div class="home"><a href="#"><i class='bx bx-home'></i><span>Əsas</span></a></div>
+            <div class="category-mobile"><i class='bx bxs-category'></i><span>Kateqoriya</span></div>
+            <div class="add-button"><a href="#"><i class='bx bx-plus-medical'></i><span>Yeni Elan</span></a></div>
+            <div class="favori"><a href="#"><i class='bx bxs-heart'></i><span>Favorilər</span></a></div>
+            <div class="user-account"><a href="#"><i class='bx bx-user'></i><span>Hesabım</span></a></div>
+        </div>
+        <!-- MOBILE NAVIGATION -->
+        <!-- HEADER WRAPPER -->
+        <div class="header-menu-mob pt-2 pb-2 shadow-xss w-100 z-index-5 bg-white d-none d-block-md"
+            id="header-menu-mob">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-start pt-2"><button class="navbar-toggler border-0" type="button"
+                            data-bs-toggle="modal" data-bs-target="#menumodal"><span
+                                class="navbar-toggler-icon"></span></button></div>
+                    <div class="col text-center"><a href="index.html">FARM</a></div>
+                    <div class="col text-end"><a class="btn category-mobile"><i class='bx bxs-category'></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="upper-header bg-lightgrey pt-2 pb-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="nav">
+                            <li class="nav-item"><a class=" ps-0" href="about.html">About Us</a></li>
+                            <li class="nav-item"><a href="dashboard.html">My account</a></li>
+                            <li class="nav-item"><a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#savedmodal">Wishlist</a></li>
+                            <li class="nav-item"><a href="#">Order Tracking</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <ul class="navbar-nav float-end">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item fw-500 font-xssss">
+                                    <a href="register-one.html" class="fw-700 text-current">Qeydiyyat</a>
+                                    <span class="text-grey-500">/</span>
+                                    <a href="login-one.html" class="fw-700 text-current">Daxil ol</a>
+                                </li>
+                            </ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wrapper pt-4 pb-1 z-index-5 ovh bg-white d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 d-flex">
+                        <!-- <a href="#" class="nav-icon ps-0 ms-0 ms-n1" data-bs-toggle="modal" data-bs-target="#categorymodal"><i class="feather-menu font-lg text-grey-500"></i></a> -->
+                        <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+                        <div class="header-search ms-auto me-2 d-flex">
+                            <!-- <a href="#" class="location me-3" data-bs-toggle="modal" data-bs-target="#locationmodal">
+                                <span class="fw-600 font-xssss text-grey-400">Delivery to</span>
+                                <i class="feather-map-pin text-grey-500"></i>
+                                <h4 class="fw-600 font-xssss mt-0 text-current mb-0 ls-0">Downtown New York..</h4>
+                            </a> -->
+                            <div class="form-group mb-0 icon-input d-none d-xl-block me-2">
+                                <i class="feather-search font-sm text-grey-400"></i>
+                                <input type="text" placeholder="Start typing to search.."
+                                    class="lh-38 pt-2 pb-2 ps-5 pe-3 font-xssss fw-500 rounded-xl posr">
+                            </div>
+                            <a href="#" class="nav-icon"><span class="dot-count bg-warning"></span><i
+                                    class="feather-bell text-grey-500"></i></a>
+                            <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#savedmodal"><i
+                                    class="feather-heart text-grey-500"></i></a>
+                            <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#cartmodal"><i
+                                    class="feather-shopping-bag text-grey-500"></i></a>
+                            <a href="dashboard.html" class="nav-icon p-0"><img
+                                    src="https://via.placeholder.com/50x50.png" alt="user" class="w-40 mt-1"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="lower-header pt-3 pb-1 shadow-xss z-index-1 bg-white d-none d-lg-block" id="lower-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar navbar-expand-lg p-0">
+                            <div class="navbar-collapse collapse show d-flex justify-content-center align-content-center"
+                                id="main_nav">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#main_nav" aria-expanded="true" aria-label="Toggle navigation"><span
+                                        class="navbar-toggler-icon"></span></button>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="shop-list-1.html">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="single-product-1.html">Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pages</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER WRAPPER -->
+        <div class='container mx-auto min-vh-100 my-2 ms-md-5 ms-3 ad-add'>
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- <span class="text-dark font-lg fw-bold">Yüklənən Şəkil: </span> -->
+                    <span class="text-dark font-lg fw-bold" id="image-count">Şəkilləri Yükləyin</span>
+                    <label htmlFor="file-input" class="ad-label mt-1" id="ad-label" role="button">
+                        <i class='feather-download me-2'></i>
+                        <span class="text-center">Şəkil yüklə</span>
+                        <input type="file" id='file-input' multiple accept="image/png, image/jpeg"
+                            onchange="image_select()" />
+                    </label>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div id='ad-images' class='pe-0'>
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <span class="main_photo posa bg-secondary text-white">Əsas şəkil</span>
+                    </div>
+
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <button class="do_main_photo posa btn bg-white text-secondary">Əsas şəkil et</button>
+                    </div>
+
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <button class="do_main_photo posa btn bg-white text-secondary">Əsas şəkil et</button>
+                    </div>
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <button class="do_main_photo posa btn bg-white text-secondary">Əsas şəkil et</button>
+                    </div>
+
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <button class="do_main_photo posa btn bg-white text-secondary">Əsas şəkil et</button>
+                    </div>
+
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <button class="do_main_photo posa btn bg-white text-secondary">Əsas şəkil et</button>
+                    </div>
+
+                    <div class="image_container d-flex justify-content-center position-relative">
+                        <img src="./cute-dog-headshot.jpg" alt="Image">
+                        <span class="delete_image position-absolute">&times;</span>
+                        <button class="do_main_photo posa btn bg-white text-secondary">Əsas şəkil et</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="ad-info row w-50 mt-5">
+                <div class="col ">
+                    <div class="form-group mb-2">
+                        <h6 class="fw-600 text-grey-900 font-xsss mb-0 text-capitalize">Elanın adı</h6>
+                    </div>
+                    <div class="form-group w-100 mb-4">
+                        <input type="text" class="form-control font-xssss fw-600 bg-white border"
+                            placeholder="İphone 13 Pro Max" />
+                    </div>
+                    <div class="form-group mb-2">
+                        <h6 class="fw-600 text-grey-900 font-xsss mb-0 text-capitalize">Açıqlama</h6>
+                    </div>
+                    <div class="form-group w-100 mb-3">
+                        <textarea maxlength="300" style="height: 100px ; line-height: 25px; resize: none"
+                            class="form-control font-xssss fw-600 bg-white border" placeholder="Description"></textarea>
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <h6 class="fw-600 text-grey-900 font-xsss mb-0 text-capitalize">Kateqoriya</h6>
+                    </div>
+                    <a href="#/"
+                        class="d-inline-flex justify-content-center align-items-center px-4 rounded-5 font-xs btn btn-ad mb-3">
+                        <span>Seçin</span><i class='bx bx-plus ps-1 font-md'></i>
+                    </a>
+                    <div class="row w-100">
+                        <div class="col-6">
+                            <div class="form-group mb-2">
+                                <h6 class="fw-600 text-grey-900 font-xsss mb-0 text-capitalize">Telefon</h6>
+                            </div>
+
+                            <div class="form-group mb-3 w-100">
+                                <input type="text" class="form-control font-xssss fw-600 bg-white border"
+                                    placeholder="+994 XX XXX XX XX" />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group mb-2">
+                                <h6 class="fw-600 text-grey-900 font-xsss mb text-capitalize">Qiymət</h6>
+                            </div>
+                            <div class="form-group mb-5 w-50">
+                                <input type="text" class="form-control font-xssss fw-600 bg-white border"
+                                    placeholder="100 ₼" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#/" class="btn-lg px-3 rounded-5 font-xss text-white btn bg-current">Elanı dərc et</a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- FOOTER WRAPPER -->
+        <div class="upper-footer">
+            <div class="container pt-5 pb-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 xs-mb-4 md-mb-3 text-start">
+                        <i class="ti-shopping-cart text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">100% Secure Payments</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">100% Payment Protection.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 xs-mb-4 md-mb-3 text-start">
+                        <i class="ti-headphone-alt text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">Support</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">Alway online feedback 24/7</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 md-mb-3 text-start">
+                        <i class="ti-lock text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">Trust pay</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">Easy Return Policy.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <i class="ti-reload text-grey-900 display1-size float-start me-3"></i>
+                        <h4 class="mt-0 fw-600 text-grey-900 font-xsss mb-0 ls-0">Return and Refund</h4>
+                        <p class="font-xsssss fw-500 text-grey-500 lh-26 mt-0 mb-0">100% money back guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt-5 mt-5"></div>
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>FRUIT & VEGETABLES</h3>
+                        <ul class="menu">
+                            <li><a href="#">Fresh Vegetables</a></li>
+                            <li><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li><a href="#">Fresh Fruits</a></li>
+                            <li><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li><a href="#">Packaged Produce</a></li>
+                            <li><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>BREAKFAST & DAIRY</h3>
+                        <ul class="menu">
+                            <li><a href="#">Fresh Vegetables</a></li>
+                            <li><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li><a href="#">Fresh Fruits</a></li>
+                            <li><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li><a href="#">Packaged Produce</a></li>
+                            <li><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>BEVERAGES</h3>
+                        <ul class="menu">
+                            <li><a href="#">Packaged Produce</a></li>
+                            <li><a href="#">Party Trays</a></li>
+                            <li><a href="#">Fresh Vegetables</a></li>
+                            <li><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li><a href="#">Fresh Fruits</a></li>
+                            <li><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li><a href="#">Packaged Produce</a></li>
+                            <li><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6 sm-mb-3">
+                        <h3>FRUIT & VEGETABLES</h3>
+                        <ul class="menu">
+                            <li><a href="#">Fresh Vegetables</a></li>
+                            <li><a href="#">Herbs &amp; Seasonings</a></li>
+                            <li><a href="#">Fresh Fruits</a></li>
+                            <li><a href="#">Cuts &amp; Sprouts</a></li>
+                            <li><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                            <li><a href="#">Packaged Produce</a></li>
+                            <li><a href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 pt-5 mt-5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-white pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center text-sm-start xs-mb-3">
+                        <a href="#"><img src="images/logo.png" alt="logo" class="w-125"></a>
+                    </div>
+                    <div class="col-md-8 text-center text-sm-end xs-mb-3">
+                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img
+                                src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="d-none d-md-inline-block d-lg-inline-block me-2"><img
+                                src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-facebook"><i
+                                class="ti-facebook text-white"></i></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-twiiter"><i
+                                class="ti-twitter-alt text-white"></i></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-linkedin"><i
+                                class="ti-linkedin text-white"></i></a>
+                        <a href="#" class="btn-round btn-round-md z-index-1 bg-instagram"><i
+                                class="ti-instagram text-white"></i></a>
+                    </div>
+                    <div class="col-md-8 text-center d-none d-xs-block ">
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                        <a href="#" class="me-2"><img src="https://via.placeholder.com/116x38.png" alt="play"></a>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="border-bottom-light mt-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-white pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-sm-start xs-mb-3">
+                        <p class="text-grey-500 fw-500 font-xssss mb-0">@ Copyright 2021 All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-sm-end"><img src="https://via.placeholder.com/320x28.png"
+                            alt="payment"></div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER WRAPPER -->
+
+    </div>
+
+
+
+
+    <!-- MENU MODAL -->
+    <div class="modal fade left modal-scrollable" id="menumodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
+                <button type="button"
+                    class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-4 me-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body vw100 text-start p-0 h-100">
+                    <div class="card p-4 border-0 text-start h-100 ">
+                        <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 d-block ls-0"> Menu</h4>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop-list-1.html">Shop </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="single-product-1.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Pages</a>
+                            </li>
+                        </ul>
+                        <div class="card h-auto mt-auto p-4 w-100 rounded-10 theme-bg border-0 text-center bg-image-cover"
+                            style="background-image: url(https://via.placeholder.com/1071x319.png);">
+                            <div class="card-body text-center p-2 mb-2">
+                                <h4 class="text-grey-900 white-text mb-3 font-xs fw-500">Hesabında<b
+                                        class="text-grey-900 white-text"> Deyilsən ?</b></h4>
+                                <a href="login-one.html"
+                                    class="btn rounded-25 bg-current white-text text-white w-150">Daxil Ol</a>
+                                <a href="register-one.html"
+                                    class="btn rounded-25 bg-current white-text text-white w-200 mt-1">Qeydiyyatdan
+                                    Keç</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MENU MODAL-->
+
+    \
+
+    <!-- CART MODAL -->
+
+    <!-- CART MODAL -->
+
+    <!-- SAVED MODAL -->
+    <div class="modal fade right modal-scrollable" id="savedmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
+            <div class="modal-content theme-dark-bg p-0 border-0 rounded-0">
+                <button type="button"
+                    class="btn-close z-index-5 bg-grey font-xsssss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-3 me-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="cart-box vh-100">
+                    <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column">
+                        <div class="card w-100 p-4 pb-0 border-0 text-start">
+                            <h4 class="fw-700 font-lg text-grey-900 text-start mb-3 mt-n2 d-block"> Saved</h4>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5">
+                                    <a href="#" class="d-block text-center" data-bs-toggle="modal"
+                                        data-bs-target="#productmodal"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                </div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                        Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>29 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                        to cart</a>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5">
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                </div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">500gm</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                        Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>49 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                        to cart</a>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5">
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                </div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">100gm</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                        Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>99 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                        to cart</a>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5">
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                </div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                        Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>39 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                        to cart</a>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-5 col-xs-5">
+                                    <a href="#" class="d-block text-center"><img
+                                            src="https://via.placeholder.com/171x148.png" alt="product-image"
+                                            class="w-100 d-inline-block pt-3 pb-3 bg-greylight rounded-6"></a>
+                                </div>
+                                <div class="col-md-7 col-xs-7 ps-0">
+                                    <span
+                                        class="ms-auto text-grey-500 fw-500 lh-1 font-xsssss mt-0 w-100 mb-2">2Kg</span>
+                                    <a href="single-product-1.html"
+                                        class="text-grey-900 fw-600 font-xssss lh-22 d-block ls-0 mb-2">Blue Diamond
+                                        Almonds Lightly Salted</a>
+                                    <h6 class="font-xs ls-3 fw-700 text-current float-start mt-1"><span
+                                            class="font-xsssss text-grey-500">$</span>39 </h6>
+                                    <a href="#"
+                                        class="text-uppercase font-xsssss text-grey-900 fw-700 ls-1 bg-greylight float-end w-125 lh-20 rounded-6 btn">Add
+                                        to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-100 p-4 pt-0 border-0 text-start mt-auto">
+                            <a href="#" class="w-100 bg-current text-white rounded-6 text-center btn">Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Category Menu for mobile and tablet  -->
+
+    <div class="mobile-overlay">
+        <div class="mobile-menu">
+            <div class="logo">
+                <a href="index.html" class="nav-link">FARM</a>
+            </div>
+            <button class="close-btn"><i class="ti ti-close"></i></button>
+
+            <ul class="categories posr h-100 mt-3">
+                <li><img src="cute-dog-headshot.jpg" alt="">
+                    <div class="category-name"><a class="" href="#">Pişiklər</a><span>Pişik mamaları, pişik
+                            yuvaları,
+                            pişik oyuncağı</span> </div>
+                </li>
+                <li><i class="fas fa-dog"></i>
+                    <div class="category-name"><a class="" href="#">İtlər</a><span>İt mamaları, İt yuvaları, İt
+                            oyuncağları</span> </div>
+                </li>
+                <li><i class="fas fa-fish"></i>
+                    <div class="category-name"><a class="" href="#">Balıqlar</a><span>Lorem ipsum dolor sit amet
+                            consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-dove"></i>
+                    <div class="category-name"><a class="" href="#">Quşlar</a><span>Lorem ipsum dolor sit amet
+                            consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-horse"></i>
+                    <div class="category-name"><a class="" href="#">Atlar</a><span>Lorem ipsum dolor sit amet
+                            consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor
+                            sit
+                            amet consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor
+                            sit
+                            amet consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>ipsum dolor sit
+                            amet
+                            consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem sit amet
+                            consectetur.</span> </div>
+                </li>
+                <li><i class="fas fa-prescription-bottle-alt"></i>
+                    <div class="category-name"><a class="" href="#">Biscuits &amp; Snacks</a><span>Lorem ipsum dolor
+                            sit
+                            amet consectetur.</span> </div>
+                </li>
+            </ul>
+
+
+            <div class="subcategories">
+                <div class="sub-header">
+                    <div class="back"><i class='bx bx-left-arrow-alt'></i></div>
+                    <div class="parent-name">Parent Name</div>
+                </div>
+                <ul class="categories posr h-100 mt-3">
+                    <li><a class="" href="#">Pişiklər</a></li>
+                    <li><a class="" href="#">İtlər</a></li>
+                    <li><a class="" href="#">Balıqlar</a></li>
+                    <li><a class="" href="#">Quşlar</a></li>
+                    <li><a class="" href="#">Atlar</a></li>
+                    <li><a class="" href="#">Biscuits &amp; Snacks</a></li>
+                    <li><a class="" href="#">Biscuits &amp; Snacks</a></li>
+                    <li><a class="" href="#">Biscuits &amp; Snacks</a></li>
+                    <li><a class="" href="#">Biscuits &amp; Snacks</a></li>
+                    <li><a class="" href="#">Biscuits &amp; Snacks</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Menu for mobile and tablet  -->
+
+
+
+    <!-- SAVED MODAL -->
+    <!-- SINGLE PRODUCT MODAL -->
+    <div class="modal fade right modal-scrollable" id="productmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
+            <div class="modal-content theme-dark-bg border-0 rounded-0">
+                <button type="button"
+                    class="btn-close z-index-5 font-xsss w-26 h-26 text-center rounded-circle posa right-0 top-0 mt-0 me-0"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="cart-box vh-100">
+                    <div class="modal-body vh-100 text-start p-0 d-flex align-items-start flex-column p-4">
+                        <div class="card border-0 w-100 text-center d-inline-block mb-3">
+                            <span
+                                class="ls-3 font-xsssss text-white text-uppercase bg-current fw-700 p-2 d-inline-block rounded-3 posa left-15 top-15 z-index-5">30%
+                                off</span>
+                            <div
+                                class="owl-carousel product-banner owl-theme overflow-hidden nav-none owl-dots-none owl-arrow-center">
+                                <div class="item me-0 bg-greylight text-center"><img
+                                        src="https://via.placeholder.com/200x400.png" alt="product-image"
+                                        class="shadow-none w-150 d-inline-block rounded-6 p-4"></div>
+                                <div class="item me-0 bg-greylight text-center"><img
+                                        src="https://via.placeholder.com/200x400.png" alt="product-image"
+                                        class="shadow-none w-150 d-inline-block rounded-6 p-4"></div>
+                            </div>
+                        </div>
+                        <div class="card border-0 w-100 mt-2">
+                            <div class="star d-inline text-left">
+                                <img src="images/star.png" alt="star" class="w-12 me-1 float-start">
+                                <img src="images/star.png" alt="star" class="w-12 me-1 float-start">
+                                <img src="images/star.png" alt="star" class="w-12 me-1 float-start">
+                                <img src="images/star.png" alt="star" class="w-12 me-1 float-start">
+                                <img src="images/star-disable.png" alt="star" class="w-12 me-2 float-start">
+                            </div>
+                            <h2 class="fw-700 text-grey-700 font-xss ls-0 lh-26 mt-2 mb-0 pe-lg-5">Blue Diamond
+                                Almonds
+                                Rice Orgomart Salted</h2>
+                            <div class="cart-count cart-count-lg float-end mt-2">
+                                <h6 class="font-sm ls-3 fw-700 text-current float-start mt-1 me-4"><span
+                                        class="font-xsssss text-grey-500">$</span>29 </h6>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" class="open-font" value="1">
+                                    <span class="plus">+</span>
+                                </div>
+                            </div>
+                            <p class="font-xssss fw-500 mt-3 text-grey-500">Vivamus adipiscing nisl ut dolor
+                                dignissim
+                                semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora
+                                torquent
+                            </p>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-1"><b class="text-grey-700">Category:</b>
+                                Meats & Seafood </h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-1"><b class="text-grey-700">Tags:</b>
+                                chicken,
+                                natural, Orgomart</h5>
+
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-3 d-flex"><i
+                                    class="feather-bookmark font-xs text-current me-2 mt-n1"></i> <b
+                                    class="text-grey-700 me-1">2 Month</b> Brand Warranty </h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-2 d-flex"><i
+                                    class="feather-help-circle font-xs text-current me-2 mt-n1"></i> <b
+                                    class="text-grey-700 me-1">100% </b> Orgomart Product</h5>
+                            <h5 class="font-xssss fw-500 text-grey-500 mt-2 d-flex mb-4"><i
+                                    class="feather-alert-triangle font-xs text-current me-2 mt-n1"></i> <b
+                                    class="text-grey-700 me-1">30 Days </b> Money back Return</h5>
+
+                            <div class="alert-warning text-danger p-2 text-center w-100 font-xsssss fw-500 rounded-6">
+                                Covid-19 Info: We keep delivering.</div>
+                            <a href="#" class="w-100 bg-current text-white rounded-6 text-center btn mt-2">ADD to
+                                Cart</a>
+                            <a href="#" class="w-100 bg-black-08 text-white rounded-6 text-center btn mt-2 mb-3">ADD
+                                wishlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SINGLE PRODUCT MODAL -->
+
+
+
+
+
+    <script src="js/plugin.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script src="js/ad.js"></script>
+</body>
+
+</html>
