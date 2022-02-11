@@ -9108,6 +9108,7 @@ fieldset:disabled .btn {
     background-color: #673BB7 !important;
 }
 
+
 .bg-success {
     background-color: #10d876 !important;
 }
@@ -17621,7 +17622,7 @@ body {
     background-position: center 10px !important;
 }
 .main-wrapper {
-    max-width: 1000px !important;
+    max-width: 1150px !important;
 }
 
 .form-group .style2-input {
@@ -17642,10 +17643,10 @@ body {
         --bs-gutter-x: 6px;
     }
 
-    .form-group .style2-input {
+    /* .form-group .style2-input {
         padding-left: 42px !important;
 
-    }
+    } */
 
     .card .row .form-group.icon-input i {
         left: 0px !important;
@@ -17768,4 +17769,48 @@ body {
         font-size: 12px !important;
         bottom: 7px;
     }
+}
+
+.profile_picture{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.profile_picture img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.edit_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    z-index: 5;
+    transition: 0.3s ease-out;
+}
+.edit_photo:hover{
+    color: #673BB7 ;
+    background: #fff !important;
+}
+
+.listing-wrapper input[type="text"]{
+    height: 45px;
+    line-height: 45px;
+}
+.filter_price{
+    --bs-gutter-x: 10px;
+}
+.listing-wrapper select{
+    line-height: normal;
+    height: 45px;
 }
